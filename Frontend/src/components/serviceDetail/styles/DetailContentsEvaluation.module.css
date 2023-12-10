@@ -1,0 +1,98 @@
+.ratingBox {
+  width: clamp(460px, 100%, 580px);
+  margin: 0 auto;
+}
+
+.rating {
+  padding: 40.6px 0px;
+  text-align: center;
+}
+
+.rank {
+  font-size: 30.74px;
+  color: #525259;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+.evaluation {
+  font-size: 16.82px;
+  color: #929299;
+
+  line-height: 29px;
+}
+
+.evaluation > p {
+  font-size: 19.72px;
+  font-weight: 700;
+  color: #2f2f2f;
+  line-height: 31.32px;
+}
+
+.detailEvaluation {
+  display: flex;
+  margin-top: 11.6px;
+  background: #f6f6fa;
+  padding: 25.5px 34.8px;
+  padding-bottom: 23.2px;
+}
+
+.detailEvaluation div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5.8px;
+  width: 20%;
+}
+
+.name {
+  font-size: 16px;
+  line-height: 1;
+  color: #525259;
+}
+
+.score {
+  font-size: 20.9px;
+  color: #2f2f2f;
+  font-weight: 500;
+  line-height: 30.16px;
+}
+
+@media (max-width: 900px) {
+  .rank {
+    font-size: 26.5px;
+    margin-bottom: 6px;
+  }
+  .evaluation {
+    font-size: 13.75px;
+    line-height: 23.5px;
+  }
+  .rating {
+    padding: 35px 0px;
+  }
+
+  .evaluation > p {
+    font-size: 15px;
+    line-height: 24.5px;
+  }
+
+  .ratingBox {
+    width: clamp(460px, 100%, 500px);
+  }
+
+  .detailEvaluation {
+    margin-top: 10px;
+    padding: 20px 15px;
+    padding-bottom: 15px;
+  }
+  .detailEvaluation div {
+    gap: 5px;
+  }
+
+  .name {
+    font-size: 13px;
+  }
+
+  .score {
+    font-size: 15.5px;
+  }
+}

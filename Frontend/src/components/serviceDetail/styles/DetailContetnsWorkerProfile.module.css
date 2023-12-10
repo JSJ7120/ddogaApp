@@ -1,0 +1,100 @@
+.profileBox p {
+  font-size: 16.82px;
+  font-weight: 700;
+  color: #2f2f2f;
+  line-height: 29px;
+}
+
+.profileBox p span {
+  color: #4a74fc;
+  font-weight: 700;
+  margin-left: 4px;
+  line-height: 29px;
+}
+
+.profile {
+  display: flex;
+  margin-top: 11.6px;
+  overflow-x: auto;
+}
+
+.workerInfo {
+  display: flex;
+  width: 40%;
+  padding: 16.2px 20.8px;
+  background-color: #f8f8fb;
+  margin-right: 18px;
+  border-radius: 10px;
+  gap: 20px;
+  align-items: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.workerInfo img {
+  width: 74.23px;
+  height: 74.23px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.workerInfo div {
+  display: flex;
+  flex-direction: column;
+}
+
+.workerInfo div p:first-child {
+  font-size: 19.72px;
+  line-height: 31.32px;
+  color: #2f2f2f;
+  font-weight: 700;
+}
+.workerInfo div p:last-child {
+  color: #4a74fc;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24.36px;
+}
+
+.profile::-webkit-scrollbar {
+  height: 5.5px;
+}
+
+.profile::-webkit-scrollbar-thumb {
+  height: 10%;
+  background: #4a74fc; /* 스크롤바의 색상 */
+  border-radius: 10px;
+}
+
+.profile::-webkit-scrollbar-track {
+  background: rgba(33, 122, 244, 0.1);
+}
+
+@media (max-width: 900px) {
+  .profile {
+    margin-top: 10px;
+  }
+
+  .profileBox p {
+    font-size: 13.75px;
+    line-height: 23.5px;
+  }
+
+  .workerInfo {
+    padding: 14px 16px;
+  }
+
+  .workerInfo img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .workerInfo div p:first-child {
+    font-size: 15px;
+    line-height: 24.5px;
+  }
+  .workerInfo div p:last-child {
+    font-size: 13px;
+    line-height: 19px;
+  }
+}

@@ -1,0 +1,57 @@
+.wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.box {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+}
+
+.box input {
+  width: 117px;
+  padding: 14.1px;
+  border: 1px solid #cacacf;
+  border-radius: 7px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+.box p {
+  font-size: 17.6px;
+  color: #1f1f1f;
+}
+
+.box input:focus {
+  border: 1px solid #4a74fc;
+  color: #4a74fc;
+  outline: none;
+}
+
+.validate {
+  color: #ff2259;
+  font-size: 14.7px;
+  margin-top: 10.5px;
+  letter-spacing: -0.6px;
+}
+
+@media (max-width: 900px) {
+  .box input {
+    width: 102px;
+    padding: 12.8px;
+    font-size: 17.4px;
+  }
+  .box p {
+    font-size: 15.3px;
+  }
+
+  .validate {
+    font-size: 12.7px;
+    margin-top: 8.2px;
+  }
+}

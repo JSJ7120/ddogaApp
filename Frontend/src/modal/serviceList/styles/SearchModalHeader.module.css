@@ -1,0 +1,112 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 8.9px 10.23px;
+  margin-bottom: 25.5px;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+}
+
+.header h4 {
+  font-family: GmarketSans;
+  font-weight: 500;
+  font-size: 35.7px;
+}
+
+.header img {
+  width: 33.2px;
+  height: 33.2px;
+  cursor: pointer;
+}
+
+@media (max-width: 1920px) {
+  .header {
+    margin: 7.7px 8.8px;
+    margin-bottom: 22px;
+  }
+
+  .header h4 {
+    font-size: 30.8px;
+  }
+
+  .header img {
+    width: 28.6px;
+    height: 28.6px;
+  }
+}
+
+@media (max-width: 1680px) {
+  .header {
+    margin: 7.2px 8.3px;
+    margin-bottom: 20.7px;
+  }
+
+  .header h4 {
+    font-size: 29px;
+  }
+
+  .header img {
+    width: 26.9px;
+    height: 26.9px;
+  }
+}
+@media (max-width: 1440px) {
+  .header {
+    margin: 6.8px 7.7px;
+    margin-bottom: 19.4px;
+  }
+
+  .header h4 {
+    font-size: 27px;
+  }
+
+  .header img {
+    width: 25.3px;
+    height: 25.3px;
+  }
+}
+@media (max-width: 1300px) {
+  .header {
+    margin: 7.4px 8.5px;
+    margin-bottom: 21.4px;
+  }
+
+  .header h4 {
+    font-size: 29px;
+  }
+
+  .header img {
+    width: 27.8px;
+    height: 27.8px;
+  }
+}
+@media (max-width: 960px) {
+  .header {
+    margin: 7.8px 9px;
+    margin-bottom: 22.5px;
+  }
+
+  .header h4 {
+    font-size: 31.5px;
+  }
+
+  .header img {
+    width: 29.2px;
+    height: 29.2px;
+  }
+}
+@media (max-width: 750px) {
+  .header {
+    margin: 6.7px 7.7px;
+    margin-bottom: 19.3px;
+  }
+
+  .header h4 {
+    font-size: 26.4px;
+  }
+
+  .header img {
+    width: 25px;
+    height: 25px;
+  }
+}

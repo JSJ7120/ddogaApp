@@ -1,0 +1,94 @@
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 40, 60, 0.5);
+  position: fixed;
+  z-index: 500;
+  backdrop-filter: blur(2px);
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+}
+
+.wrap {
+  width: 900px;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  max-height: 75vh;
+  opacity: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-right: 5px;
+  padding-left: 32px;
+  overflow-x: hidden;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 25px;
+  padding-right: 20px;
+}
+
+.head > p {
+  font-size: 23.2px;
+  font-weight: 700;
+}
+
+.head img {
+  width: 23.19px;
+  height: 23.19px;
+  cursor: pointer;
+}
+
+.transtion {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.reverseTranstion {
+  transition: all 0.2s ease-in;
+  transform: translate3d(0, 10vh, 0);
+}
+
+.box {
+  margin-top: 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 65vh;
+}
+
+.box::-webkit-scrollbar {
+  width: 3px;
+}
+
+.box::-webkit-scrollbar-thumb {
+  background: #4a74fc; /* 스크롤바의 색상 */
+  border-radius: 10px;
+}
+
+.box::-webkit-scrollbar-track {
+  background: rgba(33, 122, 244, 0.1);
+}
+
+@media (max-width: 900px) {
+  .wrap {
+    width: 100vw;
+    padding-left: 20px;
+  }
+  .head {
+    padding-right: 15px;
+  }
+
+  .head > p {
+    font-size: 20px;
+  }
+
+  .head img {
+    width: 20px;
+    height: 20px;
+  }
+}

@@ -1,0 +1,50 @@
+.programWrap,
+.programBox {
+  margin-top: 34.8px;
+}
+
+.programWrap {
+  margin-bottom: 23.2px;
+}
+.programName {
+  font-size: 19.72px;
+  color: #2f2f2f;
+  line-height: 31.32px;
+  font-weight: 700;
+}
+
+.programTags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 11.6px;
+  gap: 8.1px;
+}
+
+.programTags p {
+  font-size: 15.08px;
+  line-height: 15.08px;
+  font-weight: 500;
+  color: #525259;
+  padding: 8.1px 10.4px;
+  background: #f6f6fa;
+}
+
+@media (max-width: 900px) {
+  .programName {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .programTags {
+    margin-top: 10px;
+  }
+
+  .programTags p {
+    padding: 7px 9px;
+    font-size: 13px;
+  }
+
+  .programWrap,
+  .programBox {
+    margin-top: 30px;
+  }
+}

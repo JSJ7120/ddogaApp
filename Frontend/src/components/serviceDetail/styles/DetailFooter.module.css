@@ -1,0 +1,66 @@
+.wrap {
+  position: fixed;
+  bottom: 0;
+  width: inherit;
+  padding: 16.2px;
+  padding-bottom: 36.5px;
+  background-color: #fff;
+  border-top: 1px solid #e7e7ea;
+  z-index: 200;
+}
+
+.box {
+  display: flex;
+  gap: 11.6px;
+}
+
+.box img {
+  cursor: pointer;
+  width: 34.8px;
+  height: 34.8px;
+}
+
+.counsel,
+.counsel p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1;
+  font-size: 18.56px;
+  cursor: pointer;
+  color: #fff;
+  line-height: 55.1px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.counsel:hover {
+  opacity: 0.85;
+}
+
+.online {
+  background-color: #4a74fc;
+}
+
+.tel {
+  background-color: #00b594;
+}
+
+@media (max-width: 900px) {
+  .wrap {
+    padding: 14px;
+    padding-bottom: 20px;
+  }
+  .box {
+    gap: 10px;
+  }
+  .box img {
+    width: 30px;
+    height: 30px;
+  }
+  .counsel,
+  .counsel p {
+    font-size: 16px;
+    line-height: 47.5px;
+  }
+}

@@ -1,0 +1,207 @@
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 40, 60, 0.5);
+  position: fixed;
+  z-index: 500;
+  backdrop-filter: blur(2px);
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+}
+
+.transtion {
+  opacity: 1;
+  height: 100% !important;
+}
+
+.reverseTranstion {
+  height: 85% !important;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.wrap {
+  height: 100%;
+  width: 900px;
+  background-color: #fff;
+}
+
+.head {
+  width: 100%;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #dadadf;
+}
+
+.head img {
+  width: 69px;
+  height: 69px;
+  cursor: pointer;
+}
+
+.head input {
+  width: 89%;
+  height: 58px;
+  padding: 5.1px 17.8px;
+  box-sizing: border-box;
+  font-family: GmarketSans;
+  font-size: 25px;
+  border: 2px solid #dadadf;
+  border-radius: 7px;
+  color: #4a74fc;
+}
+
+.head input:focus {
+  outline: none !important;
+  border-color: #4a74fc;
+}
+
+.head input::placeholder {
+  font-size: 25.5px;
+  color: #c1c1c9;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.text {
+  font-size: 25.5px;
+  color: #c1c1c9;
+}
+
+/* 반응형 */
+@media (max-width: 1920px) {
+  .head {
+    height: 66.1px;
+  }
+
+  .head input {
+    padding: 4.4px 15.4px;
+    height: 50.75px;
+  }
+  .text,
+  .head input,
+  .head input::placeholder {
+    font-size: 22px;
+  }
+
+  .head img {
+    width: 59px;
+    height: 59px;
+  }
+
+  .text {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1680px) {
+  .head {
+    height: 62.1px;
+  }
+
+  .head input {
+    padding: 4.1px 14.5px;
+    height: 47.75px;
+  }
+  .text,
+  .head input,
+  .head input::placeholder {
+    font-size: 20.7px;
+  }
+
+  .head img {
+    width: 56px;
+    height: 56px;
+  }
+}
+@media (max-width: 1440px) {
+  .head {
+    height: 58.4px;
+  }
+
+  .head input {
+    padding: 3.8px 13.6px;
+    height: 44.7px;
+  }
+  .text,
+  .head input,
+  .head input::placeholder {
+    font-size: 19.4px;
+  }
+
+  .head img {
+    width: 52.5px;
+    height: 52.5px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .head {
+    height: 64px;
+  }
+
+  .head input {
+    padding: 4.2px 15px;
+    height: 49px;
+  }
+  .text,
+  .head input,
+  .head input::placeholder {
+    font-size: 21.4px;
+  }
+
+  .head img {
+    width: 57.8px;
+    height: 57.8px;
+  }
+}
+@media (max-width: 960px) {
+  .head {
+    height: 67.55px;
+  }
+
+  .head input {
+    padding: 4.5px 15.7px;
+    height: 51.7px;
+    width: 87%;
+  }
+  .text,
+  .head input,
+  .head input::placeholder {
+    font-size: 22.5px;
+  }
+
+  .head img {
+    width: 60.8px;
+    height: 60.8px;
+  }
+}
+@media (max-width: 750px) {
+  .head {
+    height: 55.55px;
+  }
+
+  .head input {
+    padding: 3.8px 12.9px;
+    height: 42.7px;
+    width: 86%;
+  }
+  .text,
+  .head input,
+  .head input::placeholder {
+    font-size: 19.5px;
+  }
+
+  .head img {
+    width: 50px;
+    height: 50px;
+  }
+}

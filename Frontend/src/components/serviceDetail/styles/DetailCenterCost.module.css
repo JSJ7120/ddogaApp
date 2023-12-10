@@ -1,0 +1,104 @@
+.box {
+  margin: 29px 83.5px 17.4px 83.5px;
+}
+
+.box > p {
+  font-size: 19.8px;
+  color: #2f2f2f;
+  line-height: 31px;
+  font-weight: 700;
+}
+
+.cost {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17.4px 15px;
+  border: 1px solid #4a74fc;
+  border-radius: 8px;
+  box-shadow: 0 0.4rem 1.1rem rgba(26, 37, 58, 0.125);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.costInfo {
+  display: flex;
+  gap: 5px;
+}
+
+.costInfo > span:first-child {
+  font-size: 20.9px;
+  line-height: 30px;
+}
+
+.strong,
+.strongBlue {
+  font-size: 23.2px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.strong {
+  color: #2f2f2f;
+}
+
+.strongBlue {
+  color: #4a74fc;
+}
+
+.etc {
+  color: #929299;
+  font-size: 14.8px;
+
+  line-height: 24px;
+}
+
+.arrow {
+  width: 25.52px;
+  height: 25.52px;
+  transition: all 0.2s;
+}
+
+.cost:hover {
+  background: #f6f6fa;
+}
+
+.cost:hover .arrow {
+  transform: translateX(5px);
+}
+
+@media (max-width: 900px) {
+  .box {
+    margin: 10px 0px;
+    margin-bottom: 2px;
+  }
+
+  .box > p {
+    font-size: 15px;
+    line-height: 24.5px;
+  }
+
+  .cost {
+    margin-top: 6px;
+    padding: 15px 13px;
+  }
+
+  .costInfo > span:first-child {
+    font-size: 15.5px;
+    line-height: 25px;
+  }
+
+  .strongBlue,
+  .strong {
+    font-size: 17.5px;
+    line-height: 25px;
+  }
+  .etc {
+    font-size: 12.75px;
+    line-height: 19px;
+  }
+  .arrow {
+    width: 18px;
+    height: 18px;
+  }
+}

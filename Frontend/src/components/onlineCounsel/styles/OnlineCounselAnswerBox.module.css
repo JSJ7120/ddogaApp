@@ -1,0 +1,25 @@
+.wrap {
+  width: 100%;
+  margin-top: 16.5px;
+  padding: 35.2px 94px 141px 94px;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11.8px;
+  opacity: 0;
+}
+
+.transition {
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+@media (max-width: 900px) {
+  .wrap {
+    margin-top: 14.3px;
+    padding: 20.5px;
+    padding-bottom: 143px;
+  }
+}

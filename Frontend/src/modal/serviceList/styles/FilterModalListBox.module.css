@@ -1,0 +1,109 @@
+.selectListBox {
+  display: flex;
+  height: 100%;
+}
+
+.selectList {
+  width: 26%;
+  text-align: center;
+  border-top: 1px solid #dadadf;
+  border-right: 1px solid #dadadf;
+  line-height: 1.6;
+}
+
+.rank,
+.program {
+  padding: 12.7px 25.5px;
+  cursor: pointer;
+  font-size: 25.5px;
+}
+
+.program {
+  border-bottom: 1px solid #dadadf;
+}
+
+.selectKeyword {
+  width: 74%;
+  padding: 12.7px 25.5px;
+}
+
+.selectKeyword div {
+  display: flex;
+  margin-top: 10px;
+  gap: 12px;
+}
+
+.selectKeyword span {
+  color: #929299;
+  font-size: 23px;
+  border: 1px solid #c1c1c9;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 7px;
+  padding: 8.9px 16.5px;
+  letter-spacing: -0.5px;
+}
+
+.selectKeyword span:focus {
+  outline: 2px solid red;
+  outline-offset: 1px;
+}
+
+.selected {
+  color: #fff;
+  font-weight: 600;
+  background-color: #00b594;
+  border-color: #fff;
+}
+
+@media (max-width: 1920px) {
+  .rank,
+  .program,
+  .selectKeyword {
+    font-size: 22px;
+    padding: 11px 22px;
+  }
+}
+@media (max-width: 1680px) {
+  .rank,
+  .program,
+  .selectKeyword {
+    font-size: 20.7px;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 1440px) {
+  .rank,
+  .program,
+  .selectKeyword {
+    font-size: 19.4px;
+    padding: 9.7px 19.4px;
+  }
+}
+@media (max-width: 1300px) {
+  .rank,
+  .program,
+  .selectKeyword {
+    font-size: 21.4px;
+    padding: 10.7px 21.4px;
+  }
+}
+@media (max-width: 960px) {
+  .rank,
+  .program,
+  .selectKeyword {
+    font-size: 22.52px;
+    padding: 11.2px 22.5px;
+  }
+  .selectKeyword div {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 750px) {
+  .rank,
+  .program,
+  .selectKeyword {
+    font-size: 19.15px;
+    padding: 10px 20px;
+  }
+}

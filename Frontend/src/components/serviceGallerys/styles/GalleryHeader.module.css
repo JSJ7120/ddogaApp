@@ -1,0 +1,63 @@
+.wrap {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 58px;
+  background-color: #fff;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+}
+
+.box {
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box p {
+  font-size: 22.04px;
+  color: #2f2f2f;
+  line-height: 29px;
+  font-weight: 700;
+}
+
+.box button:hover {
+  background-color: #f6f6fa;
+  border-radius: 7px;
+}
+
+.box button {
+  cursor: pointer;
+  width: 44.08px;
+  height: 44.08px;
+}
+
+.box button img {
+  width: 29px;
+  height: 29px;
+}
+
+@media (max-width: 900px) {
+  .wrap {
+    height: 50px;
+    padding: 0px 20px;
+  }
+
+  .box p {
+    font-size: 19px;
+    line-height: 23.5px;
+  }
+
+  .box button img {
+    width: 25px;
+    height: 25px;
+  }
+  .box button {
+    width: 32px;
+    height: 32px;
+  }
+}

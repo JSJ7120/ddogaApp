@@ -1,0 +1,40 @@
+.wrap {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #fff;
+}
+
+.box {
+  padding-top: 14.7px;
+  padding-bottom: 33px;
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.box a {
+  display: block;
+  background: #4a74fc;
+  padding: 15.3px;
+  line-height: 28.2px;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 600;
+  border-radius: 8.3px;
+  word-break: keep-all;
+}
+
+@media (max-width: 900px) {
+  .box {
+    padding: 12.8px 20.8px;
+    padding-bottom: 20.8px;
+    width: 100vw;
+  }
+  .box a {
+    padding: 13.3px;
+    font-size: 16.3px;
+    line-height: 24.5px;
+  }
+}

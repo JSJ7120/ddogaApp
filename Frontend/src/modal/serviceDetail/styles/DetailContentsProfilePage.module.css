@@ -1,0 +1,29 @@
+.pagination {
+  position: fixed;
+  bottom: 4%;
+}
+.pagination div {
+  display: flex;
+  gap: 5px;
+  padding: 7.5px 14.5px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 58px;
+}
+
+.pagination div span {
+  color: #fff;
+  font-size: 15.08px;
+}
+
+.pagination div span:last-child {
+  color: #e7e7ea;
+}
+
+@media (max-width: 900px) {
+  .pagination div {
+    padding: 6.5px 12.5px;
+  }
+  .pagination div span {
+    font-size: 11px;
+  }
+}

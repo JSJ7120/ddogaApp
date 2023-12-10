@@ -1,0 +1,35 @@
+.normal,
+.active {
+  padding: 0px 20.8px;
+  line-height: 51px;
+  border-radius: 7px;
+  color: #525259;
+  font-size: 17.4px;
+  min-width: 92px;
+  cursor: pointer;
+}
+
+.normal {
+  border: 1px solid #dadadf;
+}
+
+.normal:hover {
+  opacity: 0.75;
+}
+
+.active {
+  border: 1px solid #4a74fc;
+  color: #4a74fc;
+  font-weight: 700;
+  box-shadow: 0 0.5rem 1rem rgba(50, 60, 80, 0.1);
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+  .normal,
+  .active {
+    font-size: 14px;
+    width: 30%;
+    line-height: 44px;
+  }
+}

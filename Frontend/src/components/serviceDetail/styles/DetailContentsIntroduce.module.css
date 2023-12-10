@@ -1,0 +1,17 @@
+.box {
+  margin-top: 23.2px;
+  margin-bottom: 17.4px;
+}
+
+.text {
+  font-size: 19.72px;
+  color: #525259;
+  line-height: 34.8px;
+}
+
+@media (max-width: 900px) {
+  .text {
+    font-size: 15px;
+    line-height: 26.5px;
+  }
+}

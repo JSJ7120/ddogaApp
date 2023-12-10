@@ -1,0 +1,61 @@
+.inquiryBox {
+  display: flex;
+  flex-direction: column;
+  gap: 11.7px;
+  width: 100%;
+}
+
+.textarea {
+  padding: 14.1px;
+  line-height: 30.5px;
+  width: 100%;
+  resize: none;
+  border: 1px solid #cacacf;
+  border-radius: 7px;
+  font-size: 20px;
+  font-weight: 400;
+  height: clamp(200px, 30vh, 300px);
+}
+.textarea:focus {
+  border: 1px solid #4a74fc;
+  color: #4a74fc;
+  outline: none;
+}
+
+.lengthNav {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 7px;
+}
+
+.lengthNav p {
+  font-size: 15.3px;
+  color: #b1b1b9;
+  letter-spacing: 0;
+}
+
+.textarea::-webkit-scrollbar {
+  width: 5px;
+}
+
+.textarea::-webkit-scrollbar-thumb {
+  height: 40%;
+  background: #4a74fc; /* 스크롤바의 색상 */
+  border-radius: 10px;
+}
+
+.textarea::-webkit-scrollbar-track {
+  background: rgba(33, 122, 244, 0.1);
+}
+
+@media (max-width: 900px) {
+  .inquiryBox {
+    gap: 10.2px;
+  }
+  .lengthNav p {
+    font-size: 13.3px;
+  }
+  .textarea {
+    font-size: 17.4px;
+  }
+}

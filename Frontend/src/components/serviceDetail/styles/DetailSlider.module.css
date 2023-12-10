@@ -1,0 +1,72 @@
+.boxHeader {
+  width: 900px;
+  height: 58px;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  background-image: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.2));
+  z-index: 1;
+}
+
+.boxHeader div:last-child {
+  display: flex;
+  gap: 0px 5px;
+}
+
+.boxHeader div:last-child a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.boxHeader div:last-child a:hover {
+  background-color: hsla(0, 0%, 90%, 0.2);
+  transition: background-color 0.2s;
+}
+
+.boxHeader img {
+  filter: drop-shadow(0 0.2rem 0.4rem rgba(0, 0, 0, 0.8));
+}
+.boxHeader img:hover {
+  cursor: pointer;
+}
+
+.back {
+  width: 26.7px;
+  height: 26.7px;
+}
+
+.home,
+.search {
+  width: 29px;
+  height: 29px;
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+  .boxHeader {
+    width: 100%;
+    height: 50px;
+  }
+
+  .back {
+    width: 23px;
+    height: 23px;
+  }
+
+  .home,
+  .search {
+    width: 25px;
+    height: 25px;
+  }
+
+  .boxHeader div:last-child a {
+    width: 32px;
+    height: 32px;
+  }
+}

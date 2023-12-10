@@ -1,0 +1,56 @@
+.wrap {
+  background-color: #fff;
+}
+
+.box {
+  padding: 33px 0px;
+}
+
+.notice {
+  font-size: 20px;
+  line-height: 31.7px;
+  color: #656565;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  margin-bottom: 11.7px;
+}
+
+.text p {
+  font-size: 17.4px;
+  line-height: 29.4px;
+  color: #828282;
+  font-weight: 500;
+  margin-bottom: 7.6px;
+  letter-spacing: -0.6px;
+  padding-left: 11.7px;
+}
+
+.text p:before {
+  content: "·";
+  position: absolute;
+  font-size: 17.4px;
+  color: #828282;
+  left: 0px;
+}
+
+@media (max-width: 900px) {
+  .box {
+    padding: 20.5px;
+  }
+  .notice {
+    font-size: 15.6px;
+    line-height: 25px;
+    margin-bottom: 10.2px;
+  }
+
+  .text p {
+    font-size: 14.3px;
+    line-height: 24.5px;
+    padding-left: 10.2px;
+    margin-bottom: 6.6px;
+  }
+
+  .text p:before {
+    left: 20px;
+  }
+}

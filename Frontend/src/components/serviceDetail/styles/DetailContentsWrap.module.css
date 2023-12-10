@@ -1,0 +1,38 @@
+.wrap {
+  padding: 29.2px 32.4px;
+  border-bottom: 10px solid #f6f6fa;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.title {
+  color: #2f2f2f;
+  font-size: 23.2px;
+  font-weight: 700;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  gap: 4.6px;
+}
+
+.title img {
+  width: 25.52px;
+  height: 25.52px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .wrap {
+    padding: 25px 20px;
+  }
+
+  .title {
+    font-size: 17.5px;
+    line-height: 25px;
+  }
+
+  .title img {
+    width: 22px;
+    height: 22px;
+  }
+}

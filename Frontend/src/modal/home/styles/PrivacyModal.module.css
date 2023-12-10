@@ -1,0 +1,174 @@
+.content {
+  height: 68.5vh;
+  margin-bottom: 20px;
+  max-width: 900px;
+  padding-bottom: 156px;
+
+  margin: 0 auto;
+}
+
+.content h2 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: -0.5x;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.content h3 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.7;
+  margin-top: 42px;
+}
+
+.content p {
+  font-size: 17.3px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #2f2f2f;
+  margin-top: 10.5px;
+  margin-bottom: 16.7px;
+}
+
+.p_indent {
+  margin-left: 20px;
+}
+
+.tabel_1 {
+  width: 100%;
+}
+
+.allTable {
+  border: 1px solid #dadadf;
+  border-collapse: collapse;
+}
+
+.allTable th,
+.allTable td {
+  border: 1px solid #dadadf;
+  color: #2f2f2f;
+  text-align: center;
+  padding: 10.5px;
+  font-size: 14.5px;
+  word-break: break-all;
+  line-height: 1.6;
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: -0.5px;
+}
+
+.table_1,
+.table_2 td {
+  font-weight: 400;
+}
+
+.table_1 thead tr th:first-child {
+  width: 13%;
+}
+.table_1 thead tr th:nth-child(2) {
+  width: 42%;
+}
+.table_1 thead tr th:last-child {
+  width: 48%;
+}
+
+.table_2 {
+  width: 75%;
+}
+
+@media (max-width: 1920px) {
+  .content h2 {
+    font-size: 23px;
+  }
+  .content h3 {
+    font-size: 19.7px;
+  }
+  .content p {
+    font-size: 16.7px;
+  }
+  .allTable th,
+  .allTable td {
+    font-size: 13.8px;
+  }
+}
+@media (max-width: 1680px) {
+  .content h2 {
+    font-size: 23px;
+  }
+  .content h3 {
+    font-size: 16.3px;
+  }
+  .content p {
+    font-size: 16.4px;
+  }
+  .allTable th,
+  .allTable td {
+    font-size: 13.8px;
+  }
+}
+@media (max-width: 1440px) {
+  .content h2 {
+    font-size: 26px;
+  }
+  .content h3 {
+    font-size: 22.8px;
+  }
+  .content p {
+    font-size: 18px;
+  }
+  .allTable th,
+  .allTable td {
+    font-size: 15.5px;
+  }
+}
+@media (max-width: 1300px) {
+  .content h2 {
+    font-size: 23px;
+  }
+  .content h3 {
+    font-size: 19px;
+  }
+  .content p {
+    font-size: 16px;
+  }
+  .allTable th,
+  .allTable td {
+    font-size: 13.6px;
+  }
+}
+@media (max-width: 960px) {
+  .content h2 {
+    font-size: 25px;
+  }
+  .content h3 {
+    font-size: 21px;
+  }
+  .content p {
+    font-size: 18px;
+  }
+  .allTable th,
+  .allTable td {
+    font-size: 15px;
+  }
+}
+@media (max-width: 750px) {
+  .content h2 {
+    font-size: 21px;
+  }
+  .content h3 {
+    font-size: 18px;
+  }
+  .content p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .allTable th,
+  .allTable td {
+    font-size: 13px;
+  }
+  .table_2 {
+    width: 100%;
+  }
+}

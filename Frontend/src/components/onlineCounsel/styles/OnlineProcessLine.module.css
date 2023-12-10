@@ -1,0 +1,32 @@
+.wrap {
+  position: absolute;
+  top: 180px;
+  left: 0;
+  width: 100%;
+}
+.line {
+  height: 4.7px;
+  width: 100%;
+  background-color: #edf1ff;
+}
+
+.process {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4.7px;
+  width: 20%;
+  background-color: #4a74fc;
+  transition: all 0.4s;
+}
+
+@media (max-width: 900px) {
+  .wrap {
+    top: 156px;
+  }
+
+  .line,
+  .process {
+    height: 4.09px;
+  }
+}

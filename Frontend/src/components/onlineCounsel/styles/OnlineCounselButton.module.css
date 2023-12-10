@@ -1,0 +1,49 @@
+.boxButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid #cacacf;
+  padding: 16.4px;
+  cursor: pointer;
+  border-radius: 5.9px;
+  gap: 11.7px;
+  font-weight: 500;
+  font-size: 15.3px;
+  letter-spacing: -0.6px;
+  color: #656565;
+}
+
+.cycle {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #cacacf;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selectBoxButton {
+  border: 1px solid #4a74fc;
+  font-weight: 600;
+  color: #4a74fc;
+}
+
+.selectBoxButton .cycle::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #4a74fc;
+  position: absolute;
+}
+
+@media (max-width: 900px) {
+  .boxButton {
+    padding: 14.3px;
+    font-size: 13.3px;
+    line-height: 13.3px;
+  }
+}

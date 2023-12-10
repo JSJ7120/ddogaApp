@@ -1,0 +1,173 @@
+.wrap {
+  position: fixed;
+  z-index: 600;
+  top: 5%;
+  opacity: 0;
+}
+
+.content {
+  height: 68.5vh;
+  margin-bottom: 20px;
+  padding-bottom: 156px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.content h2 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
+.content h2:first-child {
+  margin-top: 50px;
+}
+
+.content h2:nth-child(2) {
+  margin-top: 35px;
+}
+
+.content > div {
+  margin-top: 42px;
+}
+
+.content > div > ol {
+  list-style-type: decimal;
+  margin-top: 24px;
+  font-size: 17.6px;
+  font-weight: 400;
+  color: #2f2f2f;
+}
+
+.content > div > ol > li {
+  line-height: 1.5;
+  margin-top: 13.5px;
+}
+
+.content ol {
+  margin-left: 20px;
+}
+
+.content h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.content p {
+  font-size: 17.7px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #2f2f2f;
+}
+
+.article_1 {
+  margin-top: 70px !important;
+}
+
+.article_1 p {
+  margin-top: 20px;
+}
+
+.article_2 ul {
+  margin-left: 20px;
+}
+
+.article_2 ul li {
+  list-style: "· ";
+  margin-top: 13.5px;
+  line-height: 1.5;
+}
+
+.article_2 ul li p {
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.content::-webkit-scrollbar {
+  width: 10px;
+}
+.content::-webkit-scrollbar-thumb {
+  height: 40%;
+  background: #217af4; /* 스크롤바의 색상 */
+  border-radius: 10px;
+}
+
+.content::-webkit-scrollbar-track {
+  /* background: rgba(33, 122, 244, 0.1); */
+  background: #efeff4;
+}
+
+@media (max-width: 1920px) {
+  .content h2 {
+    font-size: 23.6px;
+  }
+  .content h3 {
+    font-size: 19.7px;
+  }
+  .content p,
+  .content > div > ol {
+    font-size: 16.7px;
+  }
+}
+@media (max-width: 1680px) {
+  .content h2 {
+    font-size: 23.1px;
+  }
+  .content h3 {
+    font-size: 19.3px;
+  }
+  .content p,
+  .content > div > ol {
+    font-size: 16.4px;
+  }
+}
+@media (max-width: 1440px) {
+  .content h2 {
+    font-size: 26px;
+  }
+  .content h3 {
+    font-size: 22px;
+  }
+  .content p,
+  .content > div > ol {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1300px) {
+  .content h2 {
+    font-size: 23.4px;
+  }
+  .content h3 {
+    font-size: 19.5px;
+  }
+  .content p,
+  .content > div > ol {
+    font-size: 16.5px;
+  }
+}
+@media (max-width: 960px) {
+  .content h2 {
+    font-size: 25px;
+  }
+  .content h3 {
+    font-size: 21px;
+  }
+  .content p,
+  .content > div > ol {
+    font-size: 18.3px;
+  }
+}
+
+@media (max-width: 750px) {
+  .content h2 {
+    font-size: 22px;
+  }
+  .content h3 {
+    font-size: 19px;
+  }
+  .content p,
+  .content > div > ol {
+    font-size: 16px;
+  }
+}

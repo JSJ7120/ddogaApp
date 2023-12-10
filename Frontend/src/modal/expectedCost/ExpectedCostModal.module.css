@@ -1,0 +1,124 @@
+.text {
+  font-size: 16.8px;
+  color: #2f2f2f;
+  line-height: 29px;
+}
+
+.textBlue {
+  font-size: 15.9px;
+  font-weight: 500;
+  color: #4a74fc;
+  margin-top: 11.6px;
+  line-height: 24px;
+}
+
+.textBlue span {
+  font-weight: 700;
+}
+
+.table {
+  margin-top: 23.2px;
+  margin-bottom: 11.6px;
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+
+.table tr,
+th {
+  text-align: center;
+  font-weight: 500;
+  color: #2f2f2f;
+}
+
+.table thead tr th,
+.table tbody tr th:first-child {
+  background-color: #f6f6fa;
+  color: #727279;
+}
+
+.table th {
+  border-right: 1px solid #dadadf;
+  border-bottom: 1px solid #dadadf;
+  padding: 14.5px 1.7px;
+  font-size: 15px;
+}
+
+.table tbody tr:last-child th {
+  border-bottom: none;
+}
+
+.table th:last-child,
+.table th:last-child {
+  border-right: none;
+}
+
+.textGray {
+  font-size: 15.9px;
+  font-weight: 500;
+  color: #727279;
+  line-height: 24.3px;
+  margin-bottom: 17.4px;
+}
+
+.textBlack {
+  font-weight: 500;
+  font-size: 16.8px;
+  color: #2f2f2f;
+  padding-top: 23.2px;
+  border-top: 1px solid #e7e7ea;
+  line-height: 29px;
+}
+
+.textBlack span {
+  font-weight: 700;
+}
+
+.self {
+  width: 580px;
+  height: 380px;
+  margin: 11.6px 130px;
+  display: block;
+}
+
+/* 반응형 */
+
+@media (max-width: 900px) {
+  .self {
+    width: 500px;
+    height: 328px;
+    margin: 10px auto;
+  }
+
+  .text {
+    font-size: 13.75px;
+    line-height: 23.5px;
+  }
+
+  .textBlue {
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .table th {
+    font-size: 12.5px;
+  }
+
+  .textGray {
+    font-size: 13px;
+    margin-bottom: 15px;
+    line-height: 19px;
+  }
+  .textBlack {
+    padding-top: 20px;
+    font-size: 13.75px;
+    line-height: 23.5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .self {
+    width: 460px;
+    height: 300px;
+    margin: 10px auto;
+  }
+}

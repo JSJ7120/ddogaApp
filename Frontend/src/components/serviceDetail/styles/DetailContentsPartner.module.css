@@ -1,0 +1,50 @@
+.wrap {
+  margin-top: -23.2px;
+  padding: 32.4px;
+  padding-top: 9.3px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fffbd9;
+  padding: 23.2px 34.25px;
+  gap: 23px;
+}
+.box div p:first-child {
+  font-size: 23.2px;
+  color: #525259;
+  font-weight: 700;
+  line-height: 29px;
+}
+.box div p:last-child {
+  font-size: 17.4px;
+  color: #727279;
+  line-height: 23.2px;
+  margin-top: 4.6px;
+}
+
+.box img {
+  width: 62.2px;
+  height: 62.2px;
+}
+
+@media (max-width: 900px) {
+  .wrap {
+    padding: 0px;
+  }
+  .box {
+    padding: 20px;
+    justify-content: space-between;
+  }
+
+  .box div p:first-child {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .box div p:last-child {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}

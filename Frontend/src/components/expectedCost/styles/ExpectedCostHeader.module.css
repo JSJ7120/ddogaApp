@@ -1,0 +1,43 @@
+.wrap {
+  position: fixed;
+  width: 900px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+.box {
+  display: flex;
+  gap: 10px;
+}
+
+.back {
+  width: 26.7px;
+  height: 26.7px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.text {
+  font-weight: 700;
+  line-height: 29px;
+  font-size: 22px;
+  color: #2f2f2f;
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+  .wrap {
+    width: 100%;
+  }
+
+  .back {
+    width: 23px;
+    height: 23px;
+  }
+  .text {
+    font-size: 19px;
+    line-height: 23.5px;
+  }
+}

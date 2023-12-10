@@ -1,0 +1,58 @@
+.checkButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 9.4px;
+  font-weight: 550;
+  font-size: 15.3px;
+  cursor: pointer;
+  color: #656565;
+  letter-spacing: -0.6px;
+  margin-top: 11.7px;
+}
+
+.cycle {
+  position: relative;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  border: 1px solid #cacacf;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkButton .cycle::after {
+  content: "";
+  width: 4.7px;
+  height: 8.8px;
+  border: 2px solid #cacacf;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg);
+}
+
+.selectCheckButton .cycle {
+  background-color: #4a74fc;
+  border-color: #4a74fc;
+}
+
+.selectCheckButton .cycle::after {
+  border-color: #fff;
+}
+
+@media (max-width: 900px) {
+  .checkButton {
+    font-size: 13.3px;
+    margin-top: 10.2px;
+  }
+  .cycle {
+    width: 18.4px;
+    height: 18.4px;
+  }
+  .checkButton .cycle::after {
+    width: 4px;
+    height: 7.6px;
+  }
+}

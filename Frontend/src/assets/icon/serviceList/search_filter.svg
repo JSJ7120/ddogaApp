@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <g data-name="그룹 8205">
+        <g data-name="그룹 8193">
+            <path data-name="선 13" transform="translate(6.389 4.268)" style="stroke:#727279;stroke-linecap:round;stroke-linejoin:round;fill:none" d="M0 0h7.211"/>
+            <path data-name="선 14" transform="translate(2.4 4.268)" style="stroke:#727279;stroke-linecap:round;stroke-linejoin:round;fill:none" d="M0 0h1.416"/>
+            <path data-name="패스 9323" d="M4.879 1.713A1.213 1.213 0 1 1 3.666.5a1.213 1.213 0 0 1 1.213 1.213z" transform="translate(1.509 2.555)" style="stroke:#727279;stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+            <path data-name="선 15" transform="translate(11.973 8)" style="stroke:#727279;stroke-linecap:round;stroke-linejoin:round;fill:none" d="M0 0h1.627"/>
+            <path data-name="선 16" transform="translate(2.4 8)" style="stroke:#727279;stroke-linecap:round;stroke-linejoin:round;fill:none" d="M0 0h7.084"/>
+            <path data-name="패스 9324" d="M11.859 6.378a1.213 1.213 0 1 1-1.214-1.214 1.213 1.213 0 0 1 1.214 1.214z" transform="translate(.113 1.622)" style="stroke:#727279;stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+            <path data-name="선 17" transform="translate(8.794 11.732)" style="stroke:#727279;stroke-linecap:round;stroke-linejoin:round;fill:none" d="M0 0h4.806"/>
+            <path data-name="선 18" transform="translate(2.4 11.732)" style="stroke:#727279;stroke-linecap:round;stroke-linejoin:round;fill:none" d="M0 0h3.773"/>
+            <path data-name="패스 9325" d="M7.748 11.044A1.213 1.213 0 1 1 6.535 9.83a1.213 1.213 0 0 1 1.213 1.214z" transform="translate(.936 .688)" style="stroke:#727279;stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+            <path data-name="사각형 1953" transform="translate(2 2.654)" style="fill:none" d="M0 0h12v10.69H0z"/>
+        </g>
+        <g data-name="그룹 8192">
+            <path data-name="사각형 1954" style="fill:none" d="M0 0h16v16H0z"/>
+        </g>
+    </g>
+</svg>

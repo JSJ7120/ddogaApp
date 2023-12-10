@@ -1,0 +1,238 @@
+.wrap {
+  width: 100%;
+  margin-top: 60px;
+  padding-top: 47px;
+  padding-bottom: 29.5px;
+}
+
+.title {
+  line-height: 35.3px;
+  font-size: 27px;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+
+.title img {
+  position: relative;
+  top: 4.1px;
+  width: 25.3px;
+  height: 25.3px;
+}
+
+.text {
+  margin-top: 29.4px;
+  margin-bottom: 70.5px;
+  font-size: 20px;
+  color: #4a4a4a;
+  font-weight: 500;
+  line-height: 35.3px;
+  max-width: 86%;
+}
+
+.detailInfo {
+  padding-left: 15.3px;
+  display: flex;
+  position: relative;
+  z-index: 10;
+  transform: translateY(20px);
+}
+
+.detailInfo p {
+  font-size: 16.2px;
+  color: #4a4a4a;
+  font-weight: 500;
+  line-height: 24.6px;
+  padding: 5.8px 10.5px 5.8px 13px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.arrow {
+  width: 11.7px;
+  height: 11.7px;
+  margin-left: 5.8px;
+}
+
+.detailInfoBox {
+  padding: 23.5px;
+  padding-bottom: 11.8px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #d7d7da;
+  border-radius: 5.3px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 29.5px;
+}
+
+.detailNoneBox {
+  padding: 0;
+  height: 0;
+  border: none;
+  border-top: 1px solid #d7d7da;
+  overflow: hidden;
+  margin-bottom: 47px;
+}
+
+.detailInfoBox .infoBox:nth-child(n + 1):nth-child(-n + 2) {
+  border: none;
+}
+
+.infoBox {
+  padding: 11.7px 5.8px;
+  width: 48%;
+  border-top: 1px solid #eaeaef;
+}
+
+.infoTitle {
+  margin: 2.3px 0px;
+  font-size: 16px;
+  color: #828282;
+  line-height: 24px;
+  font-weight: 500;
+}
+.infoText {
+  margin: 2.3px 0px;
+  color: #1f1f1f;
+  font-size: 18.8px;
+  line-height: 29.5px;
+  font-weight: 600;
+}
+
+.smallInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.smallInfo div {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.smallInfo div p {
+  font-size: 16.2px;
+  line-height: 24.7px;
+  font-weight: 400;
+  color: #828282;
+}
+
+.smallInfo img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.4;
+}
+
+.smallInfo div:last-child {
+  cursor: pointer;
+}
+
+.answerBox {
+  border-top: 25px solid #f1f1f5;
+  border-bottom: 1px solid #eaeaef;
+  padding: 17.6px 0px;
+}
+
+.answerBox p {
+  line-height: 29.4px;
+  font-size: 17.3px;
+  color: #1f1f1f;
+  font-weight: 500;
+}
+.answerBox p span {
+  color: #4a74fc;
+}
+
+@media (max-width: 900px) {
+  .wrap {
+    margin-top: 51px;
+    margin-bottom: 0px;
+    padding: 20.5px;
+  }
+  .title {
+    font-size: 21.5px;
+    line-height: 30.7px;
+  }
+
+  .title img {
+    position: relative;
+    top: 3.5px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .text {
+    font-size: 15.3px;
+    line-height: 27px;
+    margin-top: 25.6px;
+    margin-bottom: 41px;
+  }
+
+  .detailInfo {
+    padding-left: 11.2px;
+    margin-top: -30px;
+    transform: translateY(17px);
+  }
+
+  .detailInfo p {
+    font-size: 13.3px;
+    line-height: 19.5px;
+  }
+  .arrow {
+    width: 10.2px;
+    height: 10.2px;
+  }
+
+  .detailInfoBox {
+    padding-top: 20.5px;
+    padding-bottom: 15.3px;
+    flex-direction: column;
+  }
+
+  .infoBox {
+    width: 100%;
+    padding: 10.2px 0px;
+  }
+
+  .detailInfoBox .infoBox:nth-child(2) {
+    border-top: 1px solid #eaeaef !important;
+  }
+
+  .detailInfoBox .infoBox:first-child {
+    border: none;
+  }
+
+  .infoTitle {
+    font-size: 13.3px;
+    line-height: 19.4px;
+  }
+
+  .infoText {
+    font-size: 14.6px;
+    line-height: 24px;
+  }
+  .smallInfo div {
+    gap: 6px;
+  }
+
+  .smallInfo img {
+    width: 17.4px;
+    height: 17.4px;
+  }
+
+  .smallInfo div p {
+    font-size: 13.3px;
+    line-height: 19.5px;
+  }
+
+  .answerBox {
+    border-top: 14px solid #f1f1f5;
+    padding: 11.2px 20.5px;
+  }
+
+  .answerBox p {
+    font-size: 14.3px;
+    line-height: 24.5px;
+  }
+}

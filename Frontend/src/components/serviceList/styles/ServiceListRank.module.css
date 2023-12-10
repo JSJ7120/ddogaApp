@@ -1,0 +1,143 @@
+.rank {
+  margin-top: 23px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.rank p {
+  line-height: 1.35;
+  padding: 6.5px 11.4px 5.9px 11.4px;
+  border-radius: 7px;
+  font-family: GmarketSans;
+  font-size: 15.3px;
+}
+
+.changeRank p {
+  font-size: 17.8px;
+}
+
+.A {
+  color: rgb(74, 116, 252);
+  background: rgb(229, 237, 255);
+}
+
+.B {
+  color: rgb(8, 138, 245);
+  background: rgb(218, 238, 254);
+}
+.C {
+  color: rgb(4, 161, 169);
+  background: rgb(213, 245, 245);
+}
+.D {
+  color: rgb(0, 184, 92);
+  background: rgb(217, 245, 231);
+}
+.E {
+  color: rgb(110, 149, 110);
+  background: rgb(234, 244, 206);
+}
+.new,
+.none {
+  color: rgb(82, 82, 89);
+  background: rgb(240, 240, 244);
+}
+
+.establish,
+.wating,
+.online {
+  background: #f6f6fa;
+  color: #727279;
+}
+
+.online {
+  display: flex;
+  color: #4a74fc;
+}
+
+.online img {
+  transform: scale(1.75);
+  padding-right: 5px;
+  position: relative;
+}
+
+@media (min-width: 2000px) and (max-width: 2200px) {
+  .rank {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 1920px) {
+  .rank {
+    margin-top: 19px;
+  }
+
+  .rank p {
+    padding: 4.7px 9.9px 2.7px 9.9px;
+    font-size: 13.24px;
+  }
+  .changeRank p {
+    font-size: 15.4px;
+  }
+
+  .online img {
+    transform: scale(1.5);
+  }
+}
+@media (max-width: 1680px) {
+  .rank p {
+    font-size: 12.46px;
+  }
+  .changeRank p {
+    font-size: 14.5px;
+  }
+
+  .online img {
+    transform: scale(1.43);
+  }
+}
+@media (max-width: 1440px) {
+  .rank {
+    margin-top: 15px;
+  }
+
+  .rank p {
+    padding: 6.7px 8.9px 4.7px 8.9px;
+    font-size: 11.6px;
+  }
+
+  .changeRank p {
+    font-size: 13.6px;
+  }
+
+  .online img {
+    transform: scale(1.35);
+  }
+}
+@media (max-width: 1300px) {
+  .rank p {
+    font-size: 12.8px;
+  }
+  .changeRank p {
+    font-size: 14.9px;
+  }
+}
+@media (max-width: 960px) {
+  .rank p {
+    font-size: 12.8px;
+  }
+  .changeRank p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 750px) {
+  .rank {
+    margin-top: 10px;
+  }
+
+  .rank p {
+    font-size: 11.5px;
+  }
+}

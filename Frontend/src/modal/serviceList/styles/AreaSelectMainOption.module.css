@@ -1,0 +1,79 @@
+.area {
+  width: 26%;
+  padding-bottom: 250px;
+  overflow-y: scroll;
+}
+
+.text {
+  text-align: center;
+  font-size: 25.5px;
+  border-bottom: 1px solid #dadadf;
+  cursor: pointer;
+  padding: 12.7px 25.5px;
+  line-height: 1.6;
+}
+
+.text:hover {
+  background-color: #f6f6fa;
+}
+
+.select,
+.select:hover {
+  color: #fff;
+  font-weight: 600;
+  border-color: #fff;
+  background: #4a74fc;
+}
+
+/* 스크롤 */
+.area::-webkit-scrollbar {
+  width: 5px;
+}
+
+.area::-webkit-scrollbar-thumb {
+  height: 40%;
+  background: #508ffe;
+  border-radius: 10px;
+}
+
+.area::-webkit-scrollbar-track {
+  background: #dadadf;
+}
+
+/* 반응형 */
+@media (max-width: 1920px) {
+  .text {
+    font-size: 22px;
+    padding: 11px 22px;
+  }
+}
+@media (max-width: 1680px) {
+  .text {
+    font-size: 20.7px;
+    padding: 10.3px 20.7px;
+  }
+}
+@media (max-width: 1440px) {
+  .text {
+    font-size: 19.4px;
+    padding: 9.7px 19.4px;
+  }
+}
+@media (max-width: 1300px) {
+  .text {
+    font-size: 21.4px;
+    padding: 10.7px 21.4px;
+  }
+}
+@media (max-width: 960px) {
+  .text {
+    font-size: 22.52px;
+    padding: 11.26px 22.52px;
+  }
+}
+@media (max-width: 750px) {
+  .text {
+    font-size: 19.4px;
+    padding: 9.7px 19.4px;
+  }
+}

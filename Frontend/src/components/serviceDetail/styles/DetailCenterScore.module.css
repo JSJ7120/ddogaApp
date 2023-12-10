@@ -1,0 +1,75 @@
+.box {
+  margin: 52px 83.5px 23px 83.5px;
+}
+
+.box img {
+  width: 23.2px;
+  height: 23.2px;
+}
+
+.box > div {
+  background: rgba(246, 246, 250, 0.6);
+  padding: 23.2px 58px;
+  display: flex;
+}
+
+.counsel {
+  border-right: 1px solid #e7e7ea;
+}
+
+.review,
+.counsel {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.review p,
+.counsel p {
+  font-size: 16px;
+  color: #929299;
+
+  line-height: 24px;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  color: #525259;
+  font-size: 20.8px;
+  line-height: 30px;
+  font-weight: 500;
+  gap: 5px;
+}
+
+.count span {
+  color: #929299;
+  font-size: 18.6px;
+  line-height: 34px;
+}
+
+@media (max-width: 900px) {
+  .box {
+    margin: 15px 0px;
+  }
+
+  .box > div {
+    padding: 10px 17px;
+  }
+
+  .review p,
+  .counsel p {
+    font-size: 13px;
+    line-height: 19px;
+  }
+  .count {
+    font-size: 15.5px;
+    line-height: 24.5px;
+  }
+  .count span {
+    font-size: 14.25px;
+    line-height: 30px;
+  }
+}

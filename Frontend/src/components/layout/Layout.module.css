@@ -1,0 +1,31 @@
+.home_layout,
+.service_layout,
+.ExpectedCost,
+.detail_layout {
+  width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 900px) {
+  .detail_layout {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 960px) {
+  .home_layout {
+    width: 90.2vw;
+  }
+
+  .service_layout {
+    width: 95.75vw;
+  }
+}
+
+@media (max-width: 750px) {
+  .service_layout {
+    width: 99vw;
+  }
+}

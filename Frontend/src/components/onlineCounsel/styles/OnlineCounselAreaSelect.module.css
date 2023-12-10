@@ -1,0 +1,44 @@
+.selectBox {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.word {
+  border: 1px solid #eee;
+  color: #4a4a4a;
+}
+
+.selectWord {
+  position: relative;
+  border: 1px solid #4a74fc;
+  color: #4a74fc;
+  font-weight: 700;
+}
+
+.word,
+.selectWord {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px 23.5px;
+  height: 64.6px;
+  cursor: pointer;
+  font-size: 15.2px;
+  margin-left: -1px;
+  margin-top: -1px;
+  word-break: keep-all;
+}
+
+@media (max-width: 900px) {
+  .selectBox {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .word,
+  .selectWord {
+    padding: 0px 20.4px;
+    height: 51px;
+    font-size: 12.8px;
+  }
+}

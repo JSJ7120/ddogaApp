@@ -1,0 +1,26 @@
+.wrap {
+  position: relative;
+  background-color: #fff;
+  border-radius: 30px;
+  margin-top: -18px;
+  width: 100%;
+}
+
+.subWrap {
+  margin-top: 50px;
+}
+
+.box {
+  padding: 29px 32.5px;
+  border-bottom: 10px solid rgb(246, 246, 250);
+}
+
+@media (max-width: 900px) {
+  .wrap {
+    margin-top: -20px;
+  }
+
+  .box {
+    padding: 25px 20px;
+  }
+}

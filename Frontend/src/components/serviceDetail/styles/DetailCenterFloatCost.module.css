@@ -1,0 +1,72 @@
+.wrap {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.box {
+  position: relative;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.offFloat {
+  transition: all 0.2s ease;
+  transform: translateY(200px);
+}
+
+.onFloat {
+  transition: all 0.2s ease;
+
+  transform: translateY(0);
+}
+
+.onFloat a,
+.offFloat a {
+  display: flex;
+  position: absolute;
+  border-radius: 58px;
+  border: 1px solid rgb(183, 199, 254);
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  right: 20.2px;
+  bottom: 140px;
+  padding: 12.7px 17.4px;
+  cursor: pointer;
+  gap: 7px;
+  box-shadow: 0 0.5rem 1rem rgba(50, 60, 80, 0.1);
+}
+
+.onFloat img,
+.offFloat img {
+  width: 20px;
+  height: 20px;
+}
+
+.onFloat p,
+.offFloat p {
+  font-size: 19.7px;
+  font-weight: 500;
+  color: #2f2f2f;
+  line-height: 31.3px;
+}
+
+@media (max-width: 900px) {
+  .onFloat a,
+  .offFloat a {
+    padding: 11px 15px;
+    gap: 6px;
+  }
+  .onFloat p,
+  .offFloat p {
+    font-size: 15px;
+    line-height: 24.5px;
+  }
+  .onFloat img,
+  .offFloat img {
+    width: 20px;
+    height: 20px;
+  }
+}

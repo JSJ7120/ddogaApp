@@ -1,0 +1,115 @@
+.family {
+  margin-top: 38px;
+}
+
+.familyLogos {
+  margin-left: -19px;
+}
+
+.familyText {
+  font-size: 19px;
+  font-weight: 500;
+  color: #929299;
+}
+
+.familyLogos a img {
+  width: 5.5vw;
+  height: 2.31vw;
+  min-width: 103px;
+  min-height: 43px;
+}
+
+.copyright {
+  margin-top: 18px;
+  margin-right: 19px;
+  font-size: 16px;
+  color: #c1c1c9;
+  font-weight: 100;
+}
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.1s ease-in-out;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+  transform: translateY(-50px);
+}
+
+@media (max-width: 1920px) {
+  .familyText {
+    font-size: 16.55px;
+  }
+
+  .copyright {
+    font-size: 14.3px;
+  }
+}
+
+@media (max-width: 1680px) {
+  .familyText {
+    font-size: 15.57px;
+  }
+  .copyright {
+    font-size: 14.3px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .familyText {
+    font-size: 16.5px;
+  }
+  .copyright {
+    font-size: 15.57px;
+  }
+}
+
+@media (max-width: 960px) {
+  .family {
+    padding: 0px 50px;
+  }
+  .familyText {
+    font-size: 16.8px;
+  }
+  .copyright {
+    font-size: 12.8px;
+  }
+
+  .familyLogos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 0px 50px;
+  }
+
+  .familyText,
+  .copyright {
+    text-align: center;
+  }
+
+  .familyLogos a:nth-child(n + 3):nth-child(-n + 4) {
+    position: relative;
+    bottom: 30px;
+  }
+
+  .familyLogos a img {
+    width: 27.9vw;
+    height: 11.6vw;
+  }
+
+  .copyright {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 750px) {
+  .familyText {
+    font-size: 13px;
+  }
+  .copyright {
+    font-size: 10px;
+  }
+}

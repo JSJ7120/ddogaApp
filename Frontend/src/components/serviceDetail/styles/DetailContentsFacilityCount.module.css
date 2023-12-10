@@ -1,0 +1,66 @@
+.facility {
+  margin-top: 34.8px;
+  margin-bottom: 23.2px;
+  padding: 23.2px 51.2px;
+}
+.facility ul {
+  display: flex;
+}
+
+.facility ul li {
+  width: 16.6%;
+}
+
+.facilityInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.facilityInfo img {
+  width: 44.08px;
+  height: 44.08px;
+  margin-bottom: 5.8px;
+}
+
+.facilityInfo p {
+  font-size: 16px;
+  line-height: 24.36px;
+}
+
+.facilityInfo p:nth-child(2) {
+  color: #525259;
+  font-weight: 400;
+}
+.facilityInfo p:last-child {
+  color: #2f2f2f;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .facility {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 20px 18px;
+  }
+
+  .facility ul {
+    flex-wrap: wrap;
+    gap: 35px 0px;
+  }
+
+  .facility ul li {
+    width: 33%;
+  }
+
+  .facilityInfo img {
+    width: 38px;
+    height: 38px;
+    margin-bottom: 5px;
+  }
+
+  .facilityInfo p {
+    font-size: 13px;
+    line-height: 19px;
+  }
+}

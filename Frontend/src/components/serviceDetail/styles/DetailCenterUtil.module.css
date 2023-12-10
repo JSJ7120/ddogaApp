@@ -1,0 +1,46 @@
+.box {
+  margin: 34.8px 83.5px 17.4px 83.5px;
+}
+
+.box > div {
+  display: flex;
+}
+
+.menu {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.menu p {
+  font-size: 16px;
+  color: #929299;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.box > div img {
+  width: 30.1px;
+  height: 30.1px;
+}
+
+@media (max-width: 900px) {
+  .box {
+    margin: 15.5px 0px 5px 0px;
+  }
+  .box > div img {
+    width: 26px;
+    height: 26px;
+  }
+  .menu {
+    gap: 4px;
+  }
+
+  .menu p {
+    font-size: 13px;
+    line-height: 19px;
+  }
+}

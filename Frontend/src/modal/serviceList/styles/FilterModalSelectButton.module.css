@@ -1,0 +1,60 @@
+.wrap {
+  display: flex;
+  margin-top: 10px;
+  gap: 12px;
+}
+
+.wrap button {
+  color: #929299;
+  font-size: 23px;
+  border: 1px solid #c1c1c9;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 7px;
+  padding: 8.9px 16.5px;
+  letter-spacing: -0.5px;
+}
+
+.wrap .active {
+  border-color: #00b594;
+  color: #00b594;
+  font-weight: 600;
+}
+
+@media (max-width: 1920px) {
+  .wrap button {
+    font-size: 19.86px;
+    padding: 7.7px 14px;
+  }
+}
+
+@media (max-width: 1680px) {
+  .wrap button {
+    font-size: 18.69px;
+    padding: 7.2px 13.4px;
+  }
+}
+@media (max-width: 1440px) {
+  .wrap button {
+    font-size: 17.5px;
+    padding: 6.8px 12.6px;
+  }
+}
+@media (max-width: 1300px) {
+  .wrap button {
+    font-size: 19.2px;
+    padding: 7.5px 14px;
+  }
+}
+@media (max-width: 960px) {
+  .wrap button {
+    font-size: 20.2px;
+    padding: 7.8px 14.6px;
+  }
+}
+@media (max-width: 750px) {
+  .wrap button {
+    font-size: 17.3px;
+    padding: 6.8px 11.2px;
+  }
+}

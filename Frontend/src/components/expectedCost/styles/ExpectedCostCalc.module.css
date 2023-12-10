@@ -1,0 +1,123 @@
+.wrap {
+  width: 900px;
+  background-color: #f6f6fa;
+  position: fixed;
+  bottom: 0;
+  padding: 29px 32.5px;
+  border-radius: 20px;
+}
+
+.firstLine {
+  display: flex;
+  justify-content: space-between;
+}
+
+.firstLine > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.firstLine > div p:first-child {
+  font-size: 18.6px;
+  color: #2f2f2f;
+  font-weight: 500;
+}
+
+.firstLine > div p:last-child {
+  font-size: 16px;
+  color: #4a74fc;
+  font-weight: 400;
+}
+.firstLine > p {
+  font-size: 19.7px;
+  color: #2f2f2f;
+  font-weight: 500;
+}
+
+.lastLine {
+  margin-top: 23.2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lastLine > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lastLine > div p:first-child {
+  font-size: 19.7px;
+  color: #2f2f2f;
+  font-weight: 700;
+}
+
+.lastLine > div p:last-child {
+  font-size: 16px;
+  color: #727279;
+  font-weight: 400;
+}
+
+.lastLine > p {
+  font-size: 26.6px;
+  font-weight: 700;
+  color: #4a74fc;
+  display: flex;
+  align-items: center;
+  line-height: 35px;
+}
+
+.lastLine > p span:first-child {
+  font-size: 20.8px;
+  color: #2f2f2f;
+  font-weight: 400;
+  padding-right: 7px;
+}
+
+.lastLine > p span:last-child {
+  color: #2f2f2f;
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+  .wrap {
+    width: 100vw;
+    padding: 25px 20px;
+    left: 0;
+  }
+  .firstLine > div p:first-child {
+    font-size: 14.25px;
+  }
+  .firstLine > div p:last-child {
+    font-size: 13px;
+  }
+  .firstLine > p {
+    font-size: 15px;
+  }
+
+  .firstLine > div,
+  .lastLine > div {
+    gap: 7px;
+  }
+
+  .lastLine {
+    margin-top: 20px;
+  }
+
+  .lastLine > div p:first-child {
+    font-size: 15px;
+  }
+  .lastLine > div p:last-child {
+    font-size: 13px;
+  }
+
+  .lastLine > p {
+    font-size: 21px;
+    line-height: 30px;
+  }
+
+  .lastLine > p span:first-child {
+    font-size: 15.5px;
+  }
+}

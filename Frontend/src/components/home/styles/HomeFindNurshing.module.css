@@ -1,0 +1,276 @@
+.title {
+  display: flex;
+  margin-top: 57px;
+  margin-bottom: 10px;
+}
+
+.title h1 {
+  font-family: GmarketSans;
+  font-size: 43px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  cursor: pointer;
+  position: relative;
+}
+.title h1::after {
+  content: "";
+  background-image: url("../../../assets/icon/home/question_n.svg");
+  background-repeat: no-repeat;
+  width: 43px;
+  height: 43px;
+  position: absolute;
+  cursor: pointer;
+  right: -43px;
+  bottom: 4px;
+}
+
+.List {
+  margin-top: 16px;
+  width: 209px;
+  height: 9.05vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 27px;
+  font-family: GmarketSans;
+  gap: 28px 0px;
+  box-shadow: 1px 8px 31px 1px rgba(40, 50, 90, 0.1);
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.List a {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.List img {
+  width: 82px;
+  height: 82px;
+}
+
+.List .type {
+  text-align: center;
+  letter-spacing: -0.5px;
+  font-size: 26px;
+  width: 65%;
+}
+
+.List a .new {
+  font-size: 18px;
+  position: absolute;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  background-color: #ff2259;
+  color: #fff;
+  padding: 6px 10px 10px 14px;
+  top: 25px;
+  right: 35px;
+}
+
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px 20px;
+}
+
+.category .List:hover .type {
+  transition: all 0.1s ease-out 0.1s;
+  color: #4a74fc;
+}
+
+.category .List:hover {
+  box-shadow: 0px 8px 13px 7px rgb(40 90 220 / 0.3);
+  transform: translateY(-15px);
+  transition: all 0.1s ease-out 0.1s;
+}
+
+@media (max-width: 1920px) {
+  .List {
+    height: 10.65vw;
+  }
+
+  .List .type {
+    font-size: 22px;
+  }
+
+  .List img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .List a .new {
+    font-size: 16.55px;
+    padding: 4px 9px 6px 9px;
+  }
+
+  .title h1 {
+    font-size: 37.5px;
+  }
+  .title h1::after {
+    width: 37.5px;
+    height: 37.5px;
+    right: -40px;
+  }
+}
+
+@media (max-width: 1680px) {
+  .List {
+    height: 11.3vw;
+  }
+  .List img {
+    width: 66px;
+    height: 66px;
+  }
+
+  .List .new {
+    font-size: 15px;
+    padding: 4px 9px 6px 9px;
+  }
+
+  .List .type {
+    font-size: 20px;
+    width: 60%;
+  }
+
+  .title h1 {
+    font-size: 35px;
+  }
+  .title h1::after {
+    width: 35px;
+    height: 35px;
+    right: -38px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .List {
+    height: 12.3vw;
+    min-height: 170px;
+  }
+
+  .List .new {
+    font-size: 15.6px;
+    padding: 3px 8px 5px 8px;
+    right: 45px;
+  }
+
+  .title h1 {
+    font-size: 33px;
+  }
+
+  .title h1::after {
+    width: 33px;
+    height: 33px;
+    right: -36px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .title h1 {
+    font-size: 36px;
+  }
+
+  .List {
+    height: 14.93vw;
+    gap: 20px 0px;
+    min-height: 173px;
+  }
+  .List img {
+    width: 68px;
+    height: 68px;
+  }
+
+  .List .new {
+    font-size: 16px;
+    padding: 4px 9px 6px 9px;
+    right: 45px;
+    top: 35px;
+  }
+
+  .List .type {
+    font-size: 21px;
+  }
+
+  .title h1::after {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 960px) {
+  .category {
+    gap: 9px 10px;
+  }
+
+  .List {
+    width: 28.7vw;
+    height: 14.3vw;
+    min-width: 127px;
+    min-height: 109px;
+    gap: 10px 0px;
+  }
+
+  .category a:hover .List img {
+    transform: scale(1.2);
+  }
+
+  .List .new {
+    font-size: 16.9px;
+    padding: 6px 10px 6px 10px;
+    right: 60px;
+    top: 15px;
+  }
+
+  .List img {
+    width: 58px;
+    height: 58px;
+  }
+
+  .List .type {
+    font-size: 18px;
+  }
+
+  .title h1 {
+    font-size: 28px;
+  }
+
+  .title h1::after {
+    width: 28px;
+    height: 28px;
+    right: -31px;
+  }
+}
+
+@media (max-width: 750px) {
+  .List {
+    height: 16.6vw;
+  }
+
+  .title h1 {
+    font-size: 25px;
+  }
+
+  .List img {
+    width: 50px;
+    height: 50px;
+  }
+  .List .new {
+    font-size: 15px;
+    padding: 6px 10px 6px 10px;
+    right: 45px;
+    top: 10px;
+  }
+  .List .type {
+    font-size: 15px;
+  }
+  .title h1::after {
+    width: 25px;
+    height: 25px;
+    right: -28px;
+  }
+}

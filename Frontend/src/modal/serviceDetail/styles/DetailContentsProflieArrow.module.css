@@ -1,0 +1,28 @@
+.arrow {
+  position: absolute;
+  width: 46.4px;
+  height: 46.4px;
+  background-color: #fff;
+
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid #dadadf;
+  box-shadow: 0 0.5rem 1rem rgba(50, 60, 80, 0.1);
+  transition: all 0.4s ease-in-out;
+}
+
+.arrow img {
+  width: 18.55px;
+  height: 18.55px;
+}
+
+@media (max-width: 900px) {
+  .arrow {
+    width: 40px;
+    height: 40px;
+  }
+  .arrow img {
+    width: 16px;
+    height: 16px;
+  }
+}

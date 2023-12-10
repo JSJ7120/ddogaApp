@@ -1,0 +1,43 @@
+.nav {
+  border-bottom: 1px solid #e7e7ea;
+  position: sticky;
+  z-index: 100;
+  top: 48px;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav ul li {
+  width: 20%;
+  text-align: center;
+  padding: 23.2px 0px;
+  font-size: 18.56px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.active {
+  color: #4a74fc;
+  border-bottom: 3px solid #4a7ffc;
+  font-weight: 700;
+}
+
+.noActive {
+  color: #525259;
+}
+
+.nav ul li:hover {
+  color: #4a74fc;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    top: 40px;
+  }
+  .nav ul li {
+    font-size: 16.82px;
+    padding: 19.1px 0px;
+  }
+}

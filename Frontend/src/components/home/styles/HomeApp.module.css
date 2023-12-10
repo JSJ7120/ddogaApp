@@ -1,0 +1,151 @@
+.App_wrap {
+  margin-top: 135px;
+  border: 1px solid #dadadf;
+  width: 100%;
+  height: 4.7vw;
+  min-height: 88px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 22px;
+}
+.DDogaLogo {
+  width: 3.01vw;
+  height: 3.01vw;
+  min-width: 56px;
+  min-height: 56px;
+}
+
+.App_wrap > div:first-child {
+  display: flex;
+  align-items: center;
+  padding-left: 21px;
+  gap: 19px;
+}
+
+.App_wrap > div:nth-child(2) {
+  display: flex;
+  gap: 10px;
+  padding-right: 20px;
+}
+
+.AppIcon {
+  width: 1vw;
+  height: 1vw;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.App_wrap > div:nth-child(2) a > div {
+  display: flex;
+  gap: 7px;
+  font-size: 18px;
+  align-items: center;
+  border-radius: 40px;
+  border: 1px solid #dadadf;
+  color: #727279;
+  padding: 9px 20.5px;
+  letter-spacing: -0.5px;
+}
+
+.App_wrap div:first-child p {
+  font-size: 23px;
+  color: #525259;
+  letter-spacing: -0.5px;
+}
+
+@media (max-width: 1920px) {
+  .App_wrap > div:nth-child(2) a > div {
+    font-size: 15.5px;
+    padding: 7.7px 17.5px;
+  }
+
+  .App_wrap div:first-child p {
+    font-size: 19.8px;
+  }
+}
+
+@media (max-width: 1680px) {
+  .App_wrap > div:nth-child(2) a > div {
+    font-size: 14.5px;
+  }
+  .App_wrap div:first-child p {
+    font-size: 18.6px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .App_wrap > div:nth-child(2) a > div {
+    font-size: 13.6px;
+    padding: 6.8px 15.5px;
+  }
+  .App_wrap div:first-child p {
+    font-size: 17.5px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .App_wrap {
+    height: 7.7vw;
+    min-height: 90px;
+  }
+  .App_wrap div:first-child p {
+    font-size: 19.2px;
+  }
+
+  .App_wrap > div:nth-child(2) a > div {
+    font-size: 15px;
+    padding: 7.5px 17.1px;
+  }
+
+  .DDogaLogo {
+    width: 4.95vw;
+    height: 4.95vw;
+    min-width: 57px;
+    min-height: 57px;
+  }
+
+  .AppIcon {
+    width: 1.65vw;
+    height: 1.65vw;
+    min-width: 20px;
+    min-height: 20px;
+  }
+}
+
+@media (max-width: 960px) {
+  .App_wrap {
+    height: 11.05vw;
+    min-height: 92px;
+    width: 88.4vw;
+    min-width: 451px;
+  }
+  .App_wrap div:first-child p {
+    font-size: 18px;
+  }
+
+  .DDogaLogo {
+    width: 7.1vw;
+    height: 7.1vw;
+    min-width: 54px;
+    min-height: 54px;
+  }
+
+  .App_wrap > div:nth-child(2) a > div {
+    font-size: 15px;
+    padding: 6.5px 16px;
+  }
+
+  .AppIcon {
+    width: 2.4vw;
+    height: 2.4vw;
+    min-width: 18px;
+    min-height: 18px;
+  }
+}
+
+@media (max-width: 750px) {
+  .App_wrap div:first-child p {
+    font-size: 15px;
+  }
+}

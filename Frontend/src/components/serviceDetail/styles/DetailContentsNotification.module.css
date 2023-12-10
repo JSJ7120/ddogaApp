@@ -1,0 +1,23 @@
+.wrap {
+  padding: 29px 32.48px;
+  min-height: 87vh;
+}
+
+.title a {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title a p {
+  font-size: 23.2px;
+  color: #2f2f2f;
+  font-weight: 700;
+  line-height: 29px;
+  cursor: pointer;
+}
+
+.title a img {
+  width: 20.88px;
+  height: 20.88px;
+  cursor: pointer;
+}

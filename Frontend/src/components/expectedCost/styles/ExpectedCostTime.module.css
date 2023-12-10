@@ -1,0 +1,27 @@
+.wrap {
+  margin-top: 21px;
+}
+.text {
+  font-size: 16.8px;
+  color: #2f2f2f;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.box {
+  margin-top: 11.6px;
+  margin-bottom: 23.2px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+  .box {
+    width: 100vw;
+  }
+  .text {
+    font-size: 13.75px;
+  }
+}

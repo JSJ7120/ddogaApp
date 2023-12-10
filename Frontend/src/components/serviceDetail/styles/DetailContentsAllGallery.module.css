@@ -1,0 +1,87 @@
+.photoBox {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16.24px;
+  padding-bottom: 280px;
+}
+
+.photo {
+  aspect-ratio: auto 1/1;
+  overflow: hidden;
+  border-radius: 9.2px;
+}
+
+.preview {
+  margin-top: 23px;
+}
+
+.viewAll {
+  margin-top: 127px;
+}
+
+.photoinfo {
+  position: relative;
+  cursor: pointer;
+}
+
+.photoinfo:hover .photo img {
+  transform: scale(1.05);
+  filter: brightness(0.8);
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.2s;
+}
+
+.text {
+  font-size: 16.24px;
+  color: #525259;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.mlutiImgs {
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  border-radius: 5.8px;
+}
+
+.multiImgs_1 {
+  top: 25px;
+  right: 25px;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.multiImgs_2 {
+  top: 15px;
+  right: 15px;
+  background-color: #ffffffbd;
+}
+
+@media (max-width: 900px) {
+  .preview {
+    margin-top: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .viewAll {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 110px;
+  }
+
+  .text {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+
+  .mlutiImgs {
+    width: 20px;
+    height: 20px;
+  }
+}

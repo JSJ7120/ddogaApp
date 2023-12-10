@@ -1,0 +1,103 @@
+.header {
+  width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 100;
+}
+
+.wrap {
+  width: 900px;
+  height: 58px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+}
+.box {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+
+.box div:first-child {
+  display: flex;
+  gap: 0px 10px;
+}
+
+.box div:first-child p {
+  margin-top: 3px;
+}
+
+.box div:last-child {
+  display: flex;
+  gap: 0px 5px;
+  align-items: center;
+}
+
+.box div:last-child a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.up {
+  opacity: 0;
+  transform: translateY(-80px);
+  transition: all 0.3s ease;
+}
+.down {
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.title {
+  font-size: 22.04px;
+
+  font-weight: 700;
+}
+
+.back {
+  cursor: pointer;
+  width: 26.7px;
+  height: 26.7px;
+}
+
+.home,
+.serach {
+  width: 29px;
+  height: 29px;
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+  .header,
+  .wrap {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 19px;
+  }
+
+  .home,
+  .serach {
+    width: 25px;
+    height: 25px;
+  }
+  .back {
+    width: 23px;
+    height: 23px;
+  }
+
+  .box div:last-child a {
+    width: 32px;
+  }
+
+  .box div:last-child {
+    gap: 4px;
+  }
+}

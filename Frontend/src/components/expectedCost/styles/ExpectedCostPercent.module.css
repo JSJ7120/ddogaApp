@@ -1,0 +1,34 @@
+.text {
+  font-size: 16.8px;
+  color: #2f2f2f;
+  font-weight: 700;
+  margin-top: 21px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.text img {
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 11.6px;
+  margin-bottom: 23.2px;
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+  .text {
+    font-size: 13.75px;
+  }
+
+  .box {
+    width: 100vw;
+  }
+}

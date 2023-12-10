@@ -1,0 +1,125 @@
+.wrap {
+  width: 100%;
+  min-height: 87vh;
+}
+
+.wrap > div {
+  border-bottom: 10px solid #f6f6fa;
+}
+
+.box {
+  padding: 40.6px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.box div:first-child {
+  border-right: 1px solid #f1f1f2;
+}
+
+.section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.section div {
+  display: flex;
+  flex-direction: column;
+}
+
+.section img {
+  width: 58px;
+  height: 58px;
+}
+
+.section div p:first-child {
+  font-size: 16.82px;
+  color: #929299;
+  line-height: 29px;
+}
+
+.section div p:last-child {
+  font-size: 20.9px;
+  color: #2f2f2f;
+  line-height: 30.16px;
+}
+
+.counselBox {
+  padding: 23.5px 33px 235px 33px;
+}
+.title {
+  font-size: 17.3px;
+  font-weight: 700;
+  line-height: 29.4px;
+}
+
+.listBox {
+  cursor: pointer;
+  padding: 20.5px 0px;
+  border-bottom: 1px solid #eaeaef;
+}
+
+.listBox:last-child {
+  border-bottom: none;
+}
+
+.listBox h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 31.7px;
+  color: #1f1f1f;
+  transition: all 0.3s ease-in-out;
+}
+
+.listBox h3:hover {
+  color: #4a74fc;
+}
+
+.listInfo {
+  display: flex;
+  margin-top: 5px;
+  gap: 4px;
+}
+
+.listInfo p {
+  line-height: 24.7px;
+  font-size: 16.2px;
+}
+
+.listInfo p:first-child {
+  color: #656565;
+  font-weight: 500;
+}
+.listInfo p:last-child {
+  color: #828282;
+  font-weight: 450;
+}
+
+@media (max-width: 900px) {
+  .box {
+    padding: 25px 0px;
+    width: 96%;
+  }
+  .section {
+    gap: 12px;
+  }
+
+  .section img {
+    width: 50px;
+    height: 50px;
+  }
+  .section div p:first-child {
+    font-size: 13.75px;
+    line-height: 23.5px;
+  }
+  .section div p:last-child {
+    font-size: 15.5px;
+    line-height: 24.5px;
+  }
+}

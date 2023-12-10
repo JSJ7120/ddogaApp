@@ -1,0 +1,58 @@
+.wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.mainBox {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.imgCounter {
+  position: absolute;
+  color: #fff;
+  top: 310px;
+  right: 15px;
+  padding: 7.5px 8.8px;
+  background-color: rgba(0, 0, 0, 0.55);
+  border-radius: 30px;
+  line-height: 1.25;
+  font-size: 12.7px;
+}
+
+.imgCounter span:first-child {
+  font-weight: 500;
+}
+.imgCounter span:last-child {
+  font-weight: 200;
+}
+.imgCounter span {
+  margin: 0 3px;
+}
+
+@media (max-width: 900px) {
+  .imgCounter {
+    padding: 6.6px 11.2px;
+    font-size: 11.2px;
+  }
+  .imgCounter span {
+    margin: 0 1px;
+  }
+
+  .mainBox {
+    overflow: visible;
+    height: 37vw !important;
+  }
+
+  .mainImgCounter {
+    top: 30vw !important;
+  }
+}

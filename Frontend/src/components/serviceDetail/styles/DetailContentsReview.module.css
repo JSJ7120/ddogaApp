@@ -1,0 +1,45 @@
+.wrap {
+  width: 100%;
+  min-height: 87vh;
+}
+
+.wrapLine {
+  border-bottom: 1px solid #e7e7ea;
+}
+
+.box {
+  padding: 29px 32.5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box p:first-child {
+  font-size: 16px;
+  color: #727279;
+  line-height: 24.36px;
+  letter-spacing: -0.2px;
+  font-weight: 500;
+}
+
+.box button {
+  padding: 8.1px 15.6px;
+  display: flex;
+  align-items: center;
+  gap: 5.8px;
+  border-radius: 58px;
+  background-color: #edf1ff;
+  cursor: pointer;
+}
+
+.box button img {
+  width: 23.19px;
+  height: 23.19px;
+}
+
+.box button p {
+  font-size: 16.82px;
+  color: #4a74fc;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: -0.4px;
+}

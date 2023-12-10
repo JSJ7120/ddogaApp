@@ -1,0 +1,238 @@
+.wrap {
+  padding: 35.3px 33px;
+  padding-bottom: 94px;
+  border-bottom: 10px solid #f1f1f5;
+}
+
+.box {
+  padding-top: 23.5px;
+  padding-left: 23.5px;
+}
+
+.box p,
+.box span {
+  font-size: 27px;
+  line-height: 35.3px;
+  color: #1f1f1f;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+}
+
+.letter_box {
+  position: absolute;
+  right: 230px;
+  top: 150px;
+  z-index: -1;
+
+  animation: up 1s ease-in-out;
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(200px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.letter_box img {
+  position: absolute;
+}
+
+.letterFront {
+  z-index: 10;
+  top: 60px;
+}
+
+@keyframes updownAnimation {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+.letterBody {
+  z-index: 5;
+  left: 10px;
+  top: 50px;
+  animation: updownAnimation 2.2s ease-in-out 0.2s infinite;
+}
+
+.effect_1 {
+  left: -20px;
+  top: 35px;
+  width: 14.1px;
+  height: 14.1px;
+}
+.effect_2 {
+  width: 9px;
+  height: 9px;
+  top: 59px;
+  left: -40px;
+}
+.effect_3 {
+  width: 6px;
+  height: 6px;
+  top: 72px;
+  left: -29px;
+  filter: opacity(0.35);
+}
+.effect_4 {
+  width: 7px;
+  height: 7px;
+  top: 17px;
+  left: 110px;
+  filter: opacity(0.3);
+}
+.effect_5 {
+  width: 10px;
+  height: 10px;
+  top: 27px;
+  left: 131px;
+  filter: opacity(0.8);
+}
+.effect_6 {
+  width: 7px;
+  height: 7px;
+  top: 40px;
+  left: 128px;
+  filter: opacity(0.5);
+}
+
+@keyframes bubbleAnimation {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.effect_1,
+.effect_2,
+.effect_3,
+.effect_4,
+.effect_5,
+.effect_6 {
+  animation: bubbleAnimation 2.2s ease-in-out 1.6s infinite;
+}
+
+.effect_3,
+.effect_6 {
+  animation-delay: 1.4px;
+}
+.effect_5,
+.effect_2 {
+  animation-delay: 1.5s;
+}
+
+.effect_1,
+.effect_4 {
+  animation-delay: 1.6s;
+}
+
+@media (max-width: 900px) {
+  .wrap {
+    padding: 0;
+  }
+  .box {
+    padding: 30.7px 20.5px;
+    padding-bottom: 41px;
+  }
+  .box p,
+  .box span {
+    font-size: 21.5px;
+    line-height: 30.7px;
+  }
+
+  .letter_box {
+    right: -20px;
+    top: 127px;
+    width: 112px;
+    height: 112px;
+    transform: rotate(-15deg);
+    animation: up 1s ease-in-out;
+    z-index: -1;
+  }
+
+  .letterFront,
+  .letterBack {
+    width: 75%;
+    height: 75%;
+  }
+
+  .letterBody {
+    width: 55%;
+    height: 100%;
+  }
+
+  .letterFront,
+  .letterBody {
+    top: 23%;
+  }
+
+  .effect_1 {
+    left: -18px;
+    top: 25px;
+  }
+  .effect_2 {
+    top: 49px;
+    left: -33px;
+  }
+
+  .effect_3 {
+    top: 64px;
+    left: -25px;
+  }
+
+  .effect_4 {
+    top: 10px;
+    left: 70px;
+  }
+
+  .effect_5 {
+    top: 25px;
+    left: 93px;
+  }
+
+  .effect_6 {
+    top: 40px;
+    left: 88px;
+  }
+
+  @keyframes up {
+    0% {
+      transform: translateY(130px);
+    }
+
+    100% {
+      transform: translateY(0px);
+      transform: rotate(-15deg);
+    }
+  }
+
+  @keyframes updownAnimation {
+    0% {
+      transform: translateY(-13px);
+    }
+    50% {
+      transform: translateY(-32px);
+    }
+    100% {
+      transform: translateY(-13px);
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.box {
+  padding-top: 45px;
+  display: flex;
+  line-height: 1.7;
+  align-items: center;
+}
+
+.logo {
+  width: 5.79vw;
+  height: 1.65vw;
+  min-width: 98px;
+  min-height: 30px;
+}
+
+.info {
+  margin-left: 31px;
+  display: flex;
+  flex-direction: column;
+  color: #929292;
+  font-size: 16.5px;
+  letter-spacing: -0.5px;
+  opacity: 1;
+}
+
+.more {
+  padding-top: 22px;
+  padding-bottom: 6px;
+  cursor: pointer;
+  color: #4a74fc;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.1s ease-in-out;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.space {
+  padding: 0px 15px;
+}
+
+@media (max-width: 1920px) {
+  .info {
+    font-size: 14.3px;
+  }
+}
+
+@media (max-width: 1680px) {
+  .info {
+    font-size: 13.4px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .info {
+    font-size: 12.6px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .info {
+    font-size: 13.9px;
+  }
+}
+
+@media (max-width: 960px) {
+  .info {
+    font-size: 14.6px;
+  }
+
+  .box {
+    flex-direction: column;
+  }
+
+  .info {
+    padding-top: 11px;
+  }
+
+  .logo {
+    width: 12.3vw;
+    height: 3.86vw;
+    min-width: 95px;
+    min-height: 30px;
+  }
+}
+
+@media (max-width: 750px) {
+  .info {
+    font-size: 12px;
+  }
+}
+@media (max-width: 575px) {
+  .info {
+    font-size: 10px;
+  }
+}

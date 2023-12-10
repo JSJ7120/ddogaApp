@@ -1,0 +1,75 @@
+.nav {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16.5px 0px;
+}
+
+.evenlyNav {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 16.5px 0px;
+}
+
+.nav button,
+.evenlyNav button {
+  position: relative;
+  z-index: 1;
+  width: 33.3%;
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+}
+
+.background {
+  position: absolute;
+  left: 0;
+  background-color: #edf1ff;
+  border-radius: 9.4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.selectText,
+.basicText {
+  font-size: 15.2px;
+}
+.selectText {
+  color: #4a4a4a;
+  font-weight: 700;
+}
+
+.basicText {
+  color: #828282;
+}
+
+.arrow {
+  width: 14px;
+  height: 14px;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    padding: 14.3px 0px;
+  }
+  .selectText,
+  .basicText {
+    font-size: 13.2px;
+  }
+  .nav button,
+  .evenlyNav button {
+    height: 41px;
+  }
+  .arrow {
+    width: 12.3px;
+    height: 12.3px;
+  }
+}

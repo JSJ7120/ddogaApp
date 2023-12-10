@@ -1,0 +1,122 @@
+.wrap {
+  width: 74%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 14px 38.3px;
+}
+.box:hover {
+  background-color: #f6f6fa;
+}
+
+.text {
+  font-size: 25.5px;
+  cursor: pointer;
+  line-height: 1.6;
+}
+
+.text span {
+  color: #f8f8f8;
+}
+
+.select {
+  color: #4a74fc;
+  font-weight: 700;
+}
+
+.select + span {
+  color: #c6d2fe;
+}
+
+.arrow {
+  font-size: 25.5px;
+  color: #bcbcbc;
+}
+
+/* 스크롤 */
+.wrap::-webkit-scrollbar {
+  width: 5px;
+}
+
+.wrap::-webkit-scrollbar-thumb {
+  height: 40%;
+  background: #508ffe;
+  border-radius: 10px;
+}
+
+.wrap::-webkit-scrollbar-track {
+  background: #dadadf;
+}
+
+/* 반응형 */
+@media (max-width: 1920px) {
+  .box {
+    padding: 12.1px 33.1px;
+  }
+
+  .text,
+  .arrow {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1680px) {
+  .box {
+    padding: 11.4px 31.1px;
+  }
+
+  .text {
+    font-size: 20.7px;
+  }
+}
+@media (max-width: 1440px) {
+  .box {
+    padding: 10.7px 29.2px;
+  }
+  .text {
+    font-size: 19.4px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .box {
+    padding: 11.7px 32.1px;
+  }
+
+  .text,
+  .arrow {
+    font-size: 21.4px;
+  }
+}
+@media (max-width: 960px) {
+  .box {
+    padding: 12.3px 33.9px;
+  }
+
+  .text,
+  .arrow {
+    font-size: 22.5px;
+  }
+}
+@media (max-width: 750px) {
+  .box {
+    padding: 10px 28px;
+  }
+
+  .text,
+  .arrow {
+    font-size: 19px;
+  }
+}

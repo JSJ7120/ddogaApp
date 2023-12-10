@@ -1,0 +1,78 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 17.4px;
+}
+
+.text {
+  color: #2f2f2f;
+  font-size: 18.5px;
+  line-height: 29px;
+}
+
+.textBox {
+  padding: 0px 11.6px;
+  border-bottom: 1px solid #f1f1f2;
+}
+.textBox div,
+.ratingBox div {
+  margin-bottom: 17.4px;
+}
+
+.ratingBox {
+  padding: 0px 11.6px;
+}
+
+.text span {
+  font-weight: 700;
+}
+
+.strongText {
+  font-weight: 700;
+  margin-bottom: 4.64px;
+  position: relative;
+}
+
+.strongText::after {
+  content: "·";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -11.6px;
+}
+
+.smallText {
+  font-size: 16px;
+  color: #525259;
+  line-height: 24.36px;
+}
+
+.textBlue {
+  color: #4a74fc;
+  font-weight: 500;
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+  .box {
+    gap: 15px;
+  }
+
+  .text {
+    font-size: 14.25px;
+    line-height: 23.5px;
+  }
+
+  .smallText {
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .strongText {
+    margin-bottom: 4px;
+  }
+
+  .textBox {
+    padding: 0px 10px;
+  }
+}

@@ -1,0 +1,25 @@
+.wrap {
+  padding: 32.5px 0px;
+}
+
+.box {
+  margin-top: 58px;
+  padding-bottom: 208px;
+}
+
+.box > p {
+  font-weight: 700;
+  color: #2f2f2f;
+  font-size: 19.8px;
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+  .wrap {
+    padding: 20px;
+  }
+
+  .wrap > p {
+    font-size: 15px;
+  }
+}

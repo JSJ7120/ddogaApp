@@ -1,0 +1,193 @@
+.box {
+  height: 80vh;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-right: 19px;
+  min-width: 406px;
+  flex-shrink: 0;
+  filter: grayscale(0.4) contrast(0.65);
+  opacity: 0.8;
+  transition: all 0.4s ease-in-out;
+}
+
+.section_1 {
+  padding: 20.8px 27.84px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header img {
+  width: 20.8px;
+  height: 20.8px;
+  cursor: pointer;
+}
+
+.header p {
+  font-size: 20.9px;
+  color: #2f2f2f;
+  font-weight: 700;
+}
+
+.profile {
+  margin-top: 23.2px;
+}
+
+.workerInfo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 16.2px 20.9px;
+  background-color: #f8f8fb;
+}
+
+.workerInfo div {
+  display: flex;
+  flex-direction: column;
+}
+
+.workerInfo img {
+  width: 74.23px;
+  height: 74.23px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.workerInfo div p:first-child {
+  font-size: 20.8px;
+  font-weight: 700;
+  line-height: 30.16px;
+  color: #2f2f2f;
+}
+
+.workerInfo div p:last-child {
+  color: #4a74fc;
+  font-size: 18.56px;
+  font-weight: 500;
+  line-height: 29px;
+}
+
+.section_2 {
+  padding: 17.4px 27.8px 17.4px 52.2px;
+  display: flex;
+  flex-direction: column;
+  gap: 11.6px;
+}
+
+.check {
+  position: relative;
+  font-size: 16.82px;
+  color: #2f2f2f;
+  font-weight: 700;
+  line-height: 29px;
+  margin-bottom: 4.6px;
+}
+
+.check::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16.2px;
+  height: 16.2px;
+  background: url("../../../assets/icon/serviceDetail/check_s.svg") no-repeat;
+  background-size: contain;
+  left: -20px;
+  top: 7px;
+}
+.careerBox {
+  padding: 0px 16.2px;
+  margin-bottom: 7px;
+}
+
+.careerBox p:first-child {
+  position: relative;
+  font-size: 16.82px;
+  color: #525259;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+.careerBox p:first-child::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #525259;
+  left: -12px;
+  top: 11px;
+}
+
+.careerBox p:last-child {
+  font-size: 16px;
+  color: #929299;
+  line-height: 24.36px;
+}
+
+.introduce {
+  font-size: 16.82px;
+  color: #525259;
+  line-height: 29px;
+}
+
+.filter {
+  filter: none;
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .header p {
+    font-size: 15.5px;
+  }
+  .header img {
+    width: 18px;
+    height: 18px;
+  }
+  .section_1 {
+    padding: 18px 24px;
+  }
+  .profile {
+    margin-top: 20px;
+  }
+  .workerInfo img {
+    width: 64px;
+    height: 64px;
+  }
+  .workerInfo div p:first-child {
+    font-size: 15.5px;
+    line-height: 24.5px;
+  }
+  .workerInfo div p:last-child {
+    font-size: 14.25px;
+    line-height: 23.5px;
+  }
+
+  .section_2 {
+    padding: 15px 24px 15px 45px;
+  }
+  .check::after {
+    width: 14px;
+    height: 14px;
+  }
+  .check {
+    font-size: 13.75px;
+    margin-bottom: 4px;
+  }
+  .careerBox {
+    padding-left: 16px;
+    margin-bottom: 6px;
+  }
+  .careerBox p:first-child {
+    font-size: 13.75px;
+    line-height: 23.5px;
+  }
+  .careerBox p:last-child {
+    font-size: 13px;
+    line-height: 19px;
+  }
+  .introduce {
+    font-size: 13.75px;
+    line-height: 23.5px;
+  }
+}

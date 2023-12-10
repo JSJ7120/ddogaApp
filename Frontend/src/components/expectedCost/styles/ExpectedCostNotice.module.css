@@ -1,0 +1,36 @@
+.notice {
+  border-top: 1px solid #e7e7ea;
+  color: #727279;
+  padding-top: 23.2px;
+}
+
+.notice p:first-child {
+  margin-bottom: 7px;
+  font-weight: 700;
+  font-size: 16.8px;
+  line-height: 29px;
+}
+
+.notice p:nth-child(n + 2):nth-child(-n + 3) {
+  font-size: 16px;
+  line-height: 24px;
+
+  letter-spacing: -0.2px;
+}
+
+.notice a {
+  text-decoration: underline;
+  color: #4a74fc;
+  font-weight: 500;
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+  .notice p:first-child {
+    font-size: 13.75px;
+  }
+
+  .notice p:nth-child(n + 2):nth-child(-n + 3) {
+    font-size: 13px;
+  }
+}

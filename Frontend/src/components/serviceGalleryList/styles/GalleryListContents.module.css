@@ -1,0 +1,46 @@
+.box {
+  position: fixed;
+  width: 100%;
+  top: 56px;
+  left: 0;
+  background-color: #fff;
+  z-index: 100;
+}
+.contents {
+  width: 900px;
+  margin: 0 auto;
+  padding-top: 18.56px;
+  padding-bottom: 16.2px;
+}
+
+.contents p {
+  font-size: 16px;
+  color: #525259;
+  line-height: 24.36px;
+}
+
+.contents .blue {
+  color: #4a74fc;
+}
+
+@media (max-width: 900px) {
+  .wrap {
+    padding: 40px 20px;
+    padding-top: 0px;
+  }
+
+  .contents {
+    padding: 16px 20px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .box {
+    transform: translate3d(0, -21px, 0);
+  }
+  .contents p {
+    font-size: 13px;
+    line-height: 19px;
+  }
+}

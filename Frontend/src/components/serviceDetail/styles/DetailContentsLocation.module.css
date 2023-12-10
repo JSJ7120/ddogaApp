@@ -1,0 +1,98 @@
+.locationWrap {
+  margin-top: 11.6px;
+  margin-bottom: 23.2px;
+}
+
+.address {
+  display: inline;
+  font-weight: 400;
+  color: #929299;
+  line-height: 29px;
+  cursor: pointer;
+}
+
+.address button {
+  font-size: 15.08px;
+  color: #4a74fc;
+  padding-left: 5.8px;
+  cursor: pointer;
+}
+
+.address button img {
+  width: 20.8px;
+  height: 20.8px;
+  transform: translateY(5px);
+}
+
+.naverMap {
+  width: 100%;
+  z-index: 0;
+  height: 400px;
+  margin-top: 16.2px;
+  margin-bottom: 23.2px;
+  border-radius: 15px;
+}
+
+.copySuccess {
+  width: 900px;
+  bottom: 15%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+}
+
+.copySuccess p {
+  cursor: pointer;
+  width: 386px;
+  font-size: 16.82px;
+  line-height: 26px;
+  color: #4a74fc;
+  padding: 13px 16px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 15px 0 rgba(0, 0, 0, 0.05);
+}
+
+.transition {
+  animation: onAlert 0.3s linear 1 forwards;
+}
+.reverseTranstion {
+  animation: offAlert 0.3s linear 1 forwards;
+}
+
+@keyframes onAlert {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes offAlert {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .address {
+    font-size: 13.75px;
+    line-height: 23.5px;
+  }
+
+  .address button {
+    font-size: 13px;
+  }
+  .address button img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .naverMap {
+    height: 367px;
+  }
+}
