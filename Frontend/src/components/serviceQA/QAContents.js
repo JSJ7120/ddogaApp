@@ -19,12 +19,14 @@ const QAContents = ({ complete, data }) => {
 
   const { publishedDate, view } = complete && arr && arr[0];
 
-  const date = format(publishedDate, "ko");
+  const newPublishedDate = 20 + `${publishedDate}`;
+
+  const date = format(newPublishedDate, "ko");
 
   return (
     <>
       <Helmet>
-        <title>{`${title} | 또하나의가족, 또가`}</title>
+        <title>{complete && `${title} | 또하나의가족, 또가`}</title>
       </Helmet>
       <div className={style.wrap}>
         <p className={style.title}>

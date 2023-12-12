@@ -2,6 +2,7 @@ const express = require("express");
 const listRouter = express.Router();
 const Lists = require("../schema/list");
 const counters = require("../schema/counter");
+const axios = require("axios");
 
 listRouter.post("/", async (req, res) => {
   try {
@@ -66,7 +67,7 @@ listRouter.post("/", async (req, res) => {
   }
 });
 
-listRouter.get("/detail/:id", async (req, res) => {
+listRouter.get("/details/:id", async (req, res) => {
   try {
     const { id } = req.params;
 
@@ -79,10 +80,25 @@ listRouter.get("/detail/:id", async (req, res) => {
     }
 
     const viewplus = (findItem.views += 1);
+    const address = findItem.address;
 
     await Lists.findOneAndUpdate({ id }, { views: viewplus });
 
-    return res.send(findItem);
+    const response = await axios.get(`https://naveropenapi.apigw.ntruss.com/map-geocode/v2/geocode?query=${address}`, {
+      headers: {
+        "X-NCP-APIGW-API-KEY-ID": process.env.REACT_APP_NAVERMAP_API_KEY_ID,
+        "X-NCP-APIGW-API-KEY": process.env.REACT_APP_NAVERMAP_API_KEY,
+      },
+    });
+
+    const location = response.data.addresses[0];
+
+    const newItem = {
+      item: findItem,
+      location,
+    };
+
+    return res.send(newItem);
   } catch (error) {
     console.error(error);
     res.status(500).send("Internal Server Error");

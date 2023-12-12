@@ -11,6 +11,7 @@ import BodyLayout from "../components/layout/Layout";
 import { Helmet } from "react-helmet";
 import { NurshingData } from "../assets/data/uiData";
 import { throttle } from "lodash";
+import Loading from "../components/common/Loading";
 
 const ServiceListContainer = () => {
   const dispatch = useDispatch();
@@ -28,14 +29,16 @@ const ServiceListContainer = () => {
   const storedProgram = localStorage.getItem("program");
   const storedRank = localStorage.getItem("rank");
   const storedArea = JSON.parse(localStorage.getItem("area"));
+  const storedSortId = JSON.parse(localStorage.getItem("sortId"));
 
   const program = storedProgram ? storedProgram.split(",") : ["all"];
   const rank = storedRank ? storedRank.split(",") : ["all"];
   const item = storedArea ? storedArea : { area: "서울", district: "전체" };
+  const sortId = storedSortId ? storedSortId : 10;
 
   const [area, setArea] = useState({
     cateId,
-    sort,
+    sort: sortId,
     area: item.area,
     district: item.district,
     rank,
@@ -48,6 +51,7 @@ const ServiceListContainer = () => {
   });
 
   const complete = status === "complete";
+  const loading = status === "loading";
 
   useEffect(() => {
     setIsLoading(false);
@@ -137,8 +141,10 @@ const ServiceListContainer = () => {
   return (
     <>
       <Helmet>
-        <title>{`${category[0]?.type} 찾아보기 | 또하나의가족, 또가`}</title>
+        <title>{complete && `${category[0]?.type} 찾아보기 | 또하나의가족, 또가`}</title>
       </Helmet>
+      {loading && <Loading loading={loading} />}
+
       {complete && (
         <>
           <ServiceHeader category={category[0]?.type} />

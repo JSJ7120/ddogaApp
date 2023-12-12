@@ -5,6 +5,7 @@ import QAContents from "../components/serviceQA/QAContents";
 import { fetchQAItem } from "../store/OnlineCounselSlice";
 import QAHeader from "../components/serviceQA/QAHeader";
 import NotFound from "../components/common/NotFound";
+import Loading from "../components/common/Loading";
 
 const OnlineCounselQAContainer = () => {
   const { id } = useParams();
@@ -16,8 +17,8 @@ const OnlineCounselQAContainer = () => {
     return { data: state.counsel.data, status: state.counsel.status };
   });
   const complete = status === "complete";
-
   const fail = status === "fail";
+  const loading = status === "loading";
 
   useEffect(() => {
     dispatch(fetchQAItem({ id }));
@@ -29,7 +30,7 @@ const OnlineCounselQAContainer = () => {
         return <NotFound />;
 
       default:
-        if (!complete) return null;
+        if (!complete) return <Loading loading={loading} />;
         return (
           <>
             <QAHeader navigate={navigate} />

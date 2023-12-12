@@ -8,6 +8,7 @@
   transition: all 0.2s ease;
   display: flex;
   justify-content: center;
+  top: 0;
 }
 
 .wrap {

@@ -6,6 +6,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { fetchGalleryList } from "../store/GalleryListSlice";
 import NotFound from "../components/common/NotFound";
 import { Helmet } from "react-helmet";
+import Loading from "../components/common/Loading";
 
 const GalleryListContainer = () => {
   const { id } = useParams();
@@ -22,6 +23,7 @@ const GalleryListContainer = () => {
 
   const complete = status === "complete";
   const fail = status === "fail";
+  const loading = status === "loading";
 
   const renderComponent = () => {
     switch (fail) {
@@ -29,11 +31,13 @@ const GalleryListContainer = () => {
         return <NotFound />;
 
       default:
+        if (!complete) return <Loading loading={loading} />;
         return (
           <>
             <Helmet>
               <title>갤러리 | 또하나의가족, 또가</title>
             </Helmet>
+
             <GalleryListHeader navigate={navigate} />
             <GalleryListContents Data={data} id={id} complete={complete} />
           </>

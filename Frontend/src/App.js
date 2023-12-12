@@ -24,7 +24,7 @@ const NotFoundPage = () => {
 function App() {
   return (
     <Routes>
-      <Route index element={<HomePage />} />
+      <Route path="/" element={<HomePage />} />
       <Route path="service" element={<ServiceListPage />} />
       <Route path="service/detail/:id" element={<ServiceDetailPage />} />
       <Route path="service/:id/detail/expect" element={<ServiceExpectedCost />} />

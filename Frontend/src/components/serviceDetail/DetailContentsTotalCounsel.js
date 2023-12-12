@@ -49,7 +49,7 @@ const DetailContentsTotalCounsel = ({
             const { title } = item["문의내용"];
             const { id } = item;
 
-            const publishedDate = item.publishedDate;
+            const publishedDate = 20 + `${item.publishedDate}`;
 
             return (
               <div className={style.listBox} key={id} onClick={(e) => moveQA(e, id)}>
@@ -57,7 +57,7 @@ const DetailContentsTotalCounsel = ({
                 <div className={style.listInfo}>
                   <p>답변대기</p>
                   <p>·</p>
-                  <p>{format(publishedDate, "ko")} 전 상담</p>
+                  <p>{format(publishedDate, "ko")} 상담</p>
                 </div>
               </div>
             );

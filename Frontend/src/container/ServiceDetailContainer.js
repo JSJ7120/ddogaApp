@@ -16,6 +16,7 @@ import DetailContentsReview from "./../components/serviceDetail/DetailContentsRe
 import { fetchMapsData } from "../api/naverMaps";
 import DetailFooter from "../components/serviceDetail/DetailFooter";
 import NotFound from "../components/common/NotFound";
+import Loading from "../components/common/Loading";
 
 const ServiceDetailContainer = () => {
   const [active, setActive] = useState(1);
@@ -28,16 +29,18 @@ const ServiceDetailContainer = () => {
 
   const { id } = params;
 
-  const { Data, status } = useSelector((state) => {
-    return { Data: state.detail.data, status: state.detail.status };
-  });
+  const {
+    data: { item, location },
+    status,
+  } = useSelector((state) => state.detail);
 
   const fail = status === "fail";
   const complete = status === "complete";
+  const loading = status === "loading";
 
   useEffect(() => {
     const fetchData = async () => {
-      const map = await fetchMapsData(Data?.address, naverMap);
+      const map = await fetchMapsData(location, naverMap);
       naverMap.current = map;
     };
 
@@ -62,7 +65,7 @@ const ServiceDetailContainer = () => {
 
   const navHandle = (navId) => {
     setActive(navId);
-    Data?.images?.length > 0 ? window.scrollTo(0, 960) : window.scrollTo(0, 634);
+    item?.images?.length > 0 ? window.scrollTo(0, 960) : window.scrollTo(0, 634);
 
     setSearchParams({ navId });
     navigate(`?navId=${navId}`);
@@ -77,7 +80,7 @@ const ServiceDetailContainer = () => {
   }
 
   const backHandle = () => {
-    navigate(`/service?cateId=${Data.cateId}&sort=10`);
+    navigate(`/service?cateId=${item.cateId}&sort=10`);
   };
 
   const back = () => {
@@ -89,27 +92,27 @@ const ServiceDetailContainer = () => {
       case 1:
         return (
           <DetailContentsFacilities
-            Data={complete && Data.navId[0]}
+            Data={complete && item.navId[0]}
             Markup={createMarkup}
-            rank={Data.rank}
+            rank={item.rank}
             naverMap={naverMap}
-            address={Data.address}
+            address={item.address}
             complete={complete}
           />
         );
       case 2:
-        return <DetailContentsContract Data={complete && Data.navId[1]} Markup={createMarkup} />;
+        return <DetailContentsContract Data={complete && item.navId[1]} Markup={createMarkup} />;
       case 3:
-        return <DetailContentsNotification Data={complete && Data.navId[2]} id={id} />;
+        return <DetailContentsNotification Data={complete && item.navId[2]} id={id} />;
       case 4:
         return (
           <DetailContentsTotalCounsel
-            isOnline={Data?.onlineCounsel}
-            onlineCounselCount={Data.onlineCounselCount}
-            phoneCounselCount={Data.phoneCounselCount}
-            counselDetails={Data?.counselDetails}
+            isOnline={item?.onlineCounsel}
+            onlineCounselCount={item.onlineCounselCount}
+            phoneCounselCount={item.phoneCounselCount}
+            counselDetails={item?.counselDetails}
             id={id}
-            title={Data.title}
+            title={item.title}
             navId={navId}
             moveQA={moveQA}
           />
@@ -125,25 +128,27 @@ const ServiceDetailContainer = () => {
   return (
     <>
       <Helmet>
-        <title>{`${Data.title} | 또하나의가족, 또가`}</title>
+        <title>{complete && `${item.title} | 또하나의가족, 또가`}</title>
       </Helmet>
       {fail && (
         <>
-          <DetailHeader Data={Data.title} isImage={Data?.images?.length > 0} backHandle={back} fail={fail} />
+          <DetailHeader Data={item.title} isImage={item?.images?.length > 0} backHandle={back} fail={fail} />
           <NotFound />
         </>
       )}
-      {!fail && complete && (
+      {!fail && complete ? (
         <>
-          <DetailHeader Data={Data.title} isImage={Data?.images?.length > 0} backHandle={backHandle} />
-          {Data?.images?.length > 0 && <DetailSlider Data={Data.images} backHandle={backHandle} />}
-          <DetailCenterInfo Data={Data} />
+          <DetailHeader Data={item.title} isImage={item?.images?.length > 0} backHandle={backHandle} />
+          {item?.images?.length > 0 && <DetailSlider Data={item.images} backHandle={backHandle} />}
+          <DetailCenterInfo Data={item} />
           <DetailContentsNav navHandle={navHandle} active={active} />
 
           {renderComponent()}
 
-          <DetailFooter id={id} title={Data.title} navId={navId} isOnline={Data?.onlineCounsel} />
+          <DetailFooter id={id} title={item.title} navId={navId} isOnline={item?.onlineCounsel} />
         </>
+      ) : (
+        <Loading loading={loading} />
       )}
     </>
   );

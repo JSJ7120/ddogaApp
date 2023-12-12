@@ -120,8 +120,6 @@ const OnlineCounselAnswerBox = ({ step, answer, setAnswer, setIsSelected, transi
     [step, answer, setAnswer]
   );
 
-  console.log(answer);
-
   const renderComponent = () => {
     switch (name) {
       case "질병명":

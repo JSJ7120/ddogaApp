@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchGallery } from "../store/GalleryListSlice";
 import NotFound from "../components/common/NotFound";
 import { Helmet } from "react-helmet";
+import Loading from "../components/common/Loading";
 
 const GalleryContainer = () => {
   const [searchParams] = useSearchParams();
@@ -24,6 +25,7 @@ const GalleryContainer = () => {
 
   const complete = status === "complete";
   const fail = status === "fail";
+  const loading = status === "loading";
 
   useEffect(() => {
     dispatch(fetchGallery({ noticeId, id }));
@@ -38,10 +40,12 @@ const GalleryContainer = () => {
         return (
           <>
             <Helmet>
-              <title>{`${data.title} | 또하나의가족, 또가`} </title>
+              <title>{`${data?.title} | 또하나의가족, 또가`} </title>
             </Helmet>
-            <GalleryHeader back={back} title={data.title} />
-            <GalleryContents content={data.content} complete={complete} />
+
+            <GalleryHeader back={back} title={data?.title} />
+            {!complete && <Loading loading={loading} />}
+            {complete && <GalleryContents content={data?.content} complete={complete} />}
           </>
         );
     }

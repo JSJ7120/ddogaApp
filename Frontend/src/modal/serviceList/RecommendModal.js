@@ -25,6 +25,8 @@ const RecommendModal = ({ close }) => {
     const text = e.target.innerText;
     const sortId = recommendText.filter((item) => item.text === text);
 
+    localStorage.setItem("sortId", sortId[0].id);
+
     navigate(`/service?cateId=${cateId}&sort=${sortId[0].id}`);
     close();
   };
