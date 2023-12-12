@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-    <g data-name="그룹 8151">
-        <path data-name="패스 9393" d="M75.829 20.337H63.472a1.961 1.961 0 0 1-1.962-1.961v-8a1.961 1.961 0 0 1 .773-1.56l6.229-4.748a1.963 1.963 0 0 1 2.389.009l6.128 4.739a1.96 1.96 0 0 1 .761 1.551v8.013a1.961 1.961 0 0 1-1.961 1.957z" transform="translate(-57.51 .337)" style="stroke:#2f2f2f;stroke-linecap:round;stroke-linejoin:round;fill:none"/>
-        <path data-name="사각형 1933" transform="translate(10.077 15.763)" style="stroke:#2f2f2f;stroke-linecap:round;stroke-linejoin:round;fill:none" d="M0 0h4.128v4.911H0z"/>
-    </g>
-    <path data-name="사각형 1935" style="fill:none" d="M0 0h24v24H0z"/>
-</svg>

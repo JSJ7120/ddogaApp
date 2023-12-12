@@ -29,9 +29,9 @@ mongoose
 app.use("/service", listRouter);
 
 app.use(
-  "/service",
+  "/api",
   createProxyMiddleware({
-    target: "http://localhost:8080/",
+    target: "http://15.164.161.145:8000/",
     changeOrigin: true,
   })
 );
