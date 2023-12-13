@@ -1,13 +1,11 @@
-/* defaultView */
 .wrap {
-  padding-top: 240px;
+  padding-top: 200px;
   padding-bottom: 120px;
 }
 
 .box {
   width: 900px;
-  height: 7.05vw;
-  min-height: 156px;
+  padding: 15px 0px;
   background: #fff;
   box-shadow: 0.25rem 0.35rem 0.4rem rgba(40, 50, 90, 0.1);
   border-radius: 12px;
@@ -31,16 +29,13 @@
 }
 
 .centerImg {
-  overflow: hidden;
   border-radius: 7px;
-  margin-top: 17px;
   margin-left: 17px;
 }
 
 .thumbNail {
-  overflow: hidden;
-  width: 7.23vw;
-  height: 4.61vw;
+  width: 190px;
+  height: 120px;
   min-height: 98.19px;
   object-fit: cover;
   border-radius: 7px;
@@ -49,7 +44,6 @@
 
 .infobox {
   width: 80%;
-  margin-top: 12px;
   margin-left: 21px;
   line-height: 1.4;
 }
@@ -59,13 +53,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 230px;
+  padding-top: 220px;
   padding-bottom: 150px;
-  gap: 20px;
+  gap: 10px;
 }
 
 .changeBox {
-  width: 437px;
+  width: 426px;
   height: 100%;
   background: #fff;
   box-shadow: 0.25rem 0.35rem 0.4rem rgba(40, 50, 90, 0.1);
@@ -76,8 +70,7 @@
 
 .changeThumbNail {
   width: 100%;
-  height: 9.97vw;
-  min-height: 220px;
+
   border-radius: 7px;
   object-fit: cover;
 }
@@ -104,157 +97,36 @@
 }
 
 /* 반응형 */
-@media (min-width: 2000px) and (max-width: 2300px) {
-  .rank {
-    margin-top: 15px;
-  }
-}
-
-@media (max-width: 1920px) {
+@media (max-width: 900px) {
   .wrap {
-    padding-top: 220px;
-  }
-  .changeWrap {
-    padding-top: 210px;
+    padding-right: 15px;
   }
 
   .box {
-    height: 8.15vw;
-    min-height: 147px;
-  }
-  .thumbNail {
-    width: 8.05vw;
-    min-width: 145.36px;
-    height: 5.11vw;
-    min-height: 92.41px;
+    width: 95vw;
   }
 
-  .changeThumbNail {
-    height: 10.45vw;
-    min-height: 207px;
-  }
-}
-@media (max-width: 1680px) {
-  .wrap {
-    padding-top: 200px;
-  }
-  .box {
-    height: 8.75vw;
-    min-height: 137px;
-  }
   .thumbNail {
-    width: 8.65vw;
-    min-width: 136.36px;
-    height: 5.5vw;
-    min-height: 86.41px;
-  }
-
-  .changeThumbNail {
-    height: 11.15vw;
-    min-height: 202px;
-  }
-}
-@media (max-width: 1440px) {
-  .wrap {
-    padding-top: 180px;
-  }
-  .changeWrap {
-    padding-top: 190px;
-  }
-  .box {
-    height: 9.52vw;
-    min-height: 132px;
-  }
-  .thumbNail {
-    width: 9.5vw;
-    min-width: 136px;
-    height: 6vw;
-    min-height: 86.6px;
-  }
-
-  .changeThumbNail {
-    height: 13.48vw;
-    min-height: 187px;
-  }
-}
-@media (max-width: 1300px) {
-  .wrap {
-    padding-top: 190px;
-  }
-
-  .box {
-    height: 11.7vw;
-    min-height: 135px;
-  }
-  .thumbNail {
-    width: 12vw;
-    min-width: 133px;
-    height: 7.63vw;
-    min-height: 85px;
-  }
-  .changeThumbNail {
-    height: 17.1vw;
-    min-height: 190px;
-  }
-}
-@media (max-width: 960px) {
-  .wrap {
-    padding-top: 200px;
-  }
-  .changeWrap {
-    padding-top: 210px;
-  }
-  .box {
-    width: 95.75vw;
-    min-width: 742px;
-    border-radius: 0px;
-    height: 16.25vw;
-    min-height: 128px;
-  }
-  .thumbNail {
-    width: 10.25vw;
-    min-width: 91.33px;
-    height: 10.25vw;
-    min-height: 91.33px;
+    width: 150px;
+    height: 110px;
   }
 
   .changeWrap {
     flex-wrap: nowrap;
+    justify-content: start;
     flex-direction: column;
-    align-items: center;
+  }
+  .changeBox {
+    width: 95vw;
+    height: 400px;
   }
 
   .changeThumbNail {
-    height: 23.5vw;
-    min-height: 205px;
+    height: 250px;
   }
-
-  .changeBox {
-    width: 93.75vw;
-    min-width: 742px;
-    border-radius: 0px;
-  }
-}
-
-@media (max-width: 750px) {
-  .wrap {
-    padding-top: 180px;
-  }
-
   .changeWrap {
-    padding-top: 180px;
-  }
-
-  .box {
-    width: 98.95vw;
-    min-width: 493px;
-  }
-  .changeBox {
-    width: 95.85vw;
-    min-width: 342px;
-  }
-  .changeThumbNail {
-    height: 27.5vw;
-    min-height: 181px;
+    padding: 0px 15px;
+    padding-top: 220px;
+    padding-bottom: 90px;
   }
 }

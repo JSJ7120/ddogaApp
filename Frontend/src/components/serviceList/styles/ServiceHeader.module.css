@@ -1,6 +1,6 @@
 .wrap {
   width: 100%;
-  height: 76.6px;
+  height: 63px;
   position: fixed;
   top: 0;
   z-index: 300;
@@ -15,12 +15,8 @@
   align-items: center;
 }
 
-.divideBox_1 {
-  width: 5%;
-  margin-right: 35px;
-}
 .divideBox_2 {
-  font-size: 28px;
+  font-size: 25px;
   font-family: GmarketSansMedium;
   font-weight: 900;
   width: 95%;
@@ -33,8 +29,8 @@
 
 .home {
   background-image: url("../../../assets/icon/serviceList/back.svg");
-  width: 68.94px;
-  height: 68.94px;
+  width: 55px;
+  height: 55px;
   cursor: pointer;
   background-color: #fff;
   margin-bottom: 3px;
@@ -43,168 +39,34 @@
 .search {
   background-image: url("../../../assets/icon/serviceList/search.svg");
   background-repeat: no-repeat;
-  width: 38.3px;
-  height: 38.3px;
+  width: 30.3px;
+  height: 30.3px;
   cursor: pointer;
-  background-size: 76px;
+  background-size: 54px;
   background-color: #fff;
 }
 
 .search:hover {
-  background-position: -37px;
+  background-position: -27px;
 }
 
 /* 반응형 */
-@media (max-width: 1920px) {
-  .wrap {
-    height: 66px;
-  }
-
-  .home {
-    width: 59.58px;
-    height: 59.58px;
-  }
-  .divideBox_1 {
-    width: 3%;
-  }
-
-  .divideBox_2 {
-    font-size: 24.2px;
-  }
-  .search {
-    width: 33.09px;
-    height: 33.09px;
-    background-size: 66px;
-  }
-  .search:hover {
-    background-position: -33px;
-  }
-}
-@media (max-width: 1680px) {
-  .wrap {
-    height: 62px;
-  }
-
-  .home {
-    width: 56.06px;
-    height: 56.06px;
-  }
-  .divideBox_2 {
-    font-size: 22.8px;
-  }
-  .search {
-    width: 31.09px;
-    height: 31.09px;
-    background-size: 63px;
-  }
-  .search:hover {
-    background-position: -32px;
-  }
-}
-@media (max-width: 1440px) {
+@media (max-width: 900px) {
   .wrap {
     height: 58px;
   }
 
-  .home {
-    width: 52.55px;
-    height: 52.55px;
-  }
   .divideBox_2 {
-    font-size: 21.4px;
-  }
-  .search {
-    width: 29.09px;
-    height: 29.09px;
-    background-size: 59px;
-  }
-  .search:hover {
-    background-position: -30px;
-  }
-}
-@media (max-width: 1300px) {
-  .wrap {
-    height: 64px;
-  }
-
-  .divideBox_1 {
-    width: 2%;
+    font-size: 22px;
   }
 
   .home {
-    width: 57.8px;
-    height: 57.8px;
-  }
-  .divideBox_2 {
-    font-size: 23.55px;
-  }
-  .search {
-    width: 32.11px;
-    height: 32.11px;
-    background-size: 63px;
-  }
-  .search:hover {
-    background-position: -32px;
-  }
-}
-@media (max-width: 960px) {
-  .wrap {
-    height: 67.5px;
+    width: 53px;
+    height: 53px;
   }
 
   .box {
-    width: 91.2vw;
-    min-width: 428px;
-  }
-
-  .divideBox_1 {
-    width: 3%;
-  }
-
-  .home {
-    width: 60.8px;
-    height: 60.8px;
-  }
-  .divideBox_2 {
-    font-size: 24.7px;
-  }
-  .search {
-    width: 33.7px;
-    height: 33.7px;
-    background-size: 67px;
-    margin-right: 25px;
-  }
-  .search:hover {
-    background-position: -33px;
-  }
-}
-@media (max-width: 750px) {
-  .wrap {
-    height: 56.5px;
-  }
-
-  .box {
-    width: calc(91.2vw + 20px);
-  }
-
-  .divideBox_1 {
-    width: 5%;
-  }
-
-  .home {
-    width: 51.4px;
-    height: 51.4px;
-  }
-  .divideBox_2 {
-    font-size: 21.5px;
-  }
-  .search {
-    width: 27.2px;
-    height: 27.2px;
-    background-size: 55px;
-    margin-right: 0px;
-  }
-  .search:hover {
-    background-position: -28px;
+    padding: 0px 10px;
+    width: 100vw;
   }
 }

@@ -112,7 +112,7 @@ listRouter.get("/galleryList/:id", async (req, res) => {
     const findGalleryList = await Lists.findOne({ id }).select({ navId: { $elemMatch: { id: 3 } } });
 
     if (!findGalleryList) {
-      return res.status(404).send("not found page");
+      return res.status(404).send("Not found page");
     }
 
     const result = findGalleryList.navId[0].notice;

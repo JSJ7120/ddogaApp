@@ -6,15 +6,15 @@
 }
 
 .rank p {
-  line-height: 1.35;
+  line-height: 1.2;
   padding: 6.5px 11.4px 5.9px 11.4px;
   border-radius: 7px;
   font-family: GmarketSans;
-  font-size: 15.3px;
+  font-size: 13px;
 }
 
 .changeRank p {
-  font-size: 17.8px;
+  font-size: 15px;
 }
 
 .A {
@@ -62,82 +62,11 @@
   position: relative;
 }
 
-@media (min-width: 2000px) and (max-width: 2200px) {
-  .rank {
-    margin-top: 15px;
-  }
-}
-
-@media (max-width: 1920px) {
-  .rank {
-    margin-top: 19px;
-  }
-
+@media (max-width: 900px) {
   .rank p {
-    padding: 4.7px 9.9px 2.7px 9.9px;
-    font-size: 13.24px;
+    font-size: 12px;
   }
   .changeRank p {
-    font-size: 15.4px;
-  }
-
-  .online img {
-    transform: scale(1.5);
-  }
-}
-@media (max-width: 1680px) {
-  .rank p {
-    font-size: 12.46px;
-  }
-  .changeRank p {
-    font-size: 14.5px;
-  }
-
-  .online img {
-    transform: scale(1.43);
-  }
-}
-@media (max-width: 1440px) {
-  .rank {
-    margin-top: 15px;
-  }
-
-  .rank p {
-    padding: 6.7px 8.9px 4.7px 8.9px;
-    font-size: 11.6px;
-  }
-
-  .changeRank p {
-    font-size: 13.6px;
-  }
-
-  .online img {
-    transform: scale(1.35);
-  }
-}
-@media (max-width: 1300px) {
-  .rank p {
-    font-size: 12.8px;
-  }
-  .changeRank p {
-    font-size: 14.9px;
-  }
-}
-@media (max-width: 960px) {
-  .rank p {
-    font-size: 12.8px;
-  }
-  .changeRank p {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 750px) {
-  .rank {
-    margin-top: 10px;
-  }
-
-  .rank p {
-    font-size: 11.5px;
+    font-size: 13px;
   }
 }

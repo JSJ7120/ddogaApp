@@ -9,9 +9,10 @@
 }
 
 .box p {
+  padding: 10px 15px;
   color: #929292;
   border: 1px solid #dadadf;
-  font-size: 19.7px;
+  font-size: 18px;
   border-radius: 30px;
   letter-spacing: -0.5px;
   display: flex;
@@ -25,53 +26,35 @@
   cursor: pointer;
 }
 
-.box p:first-child {
-  width: 6.53vw;
-  min-width: 144.36px;
-  height: 1.8vw;
-  min-height: 40px;
-}
-
-.box p:last-child {
-  width: 5.71vw;
-  min-width: 120.72px;
-  height: 1.8vw;
-  min-height: 40px;
-}
-
 .dropdown {
   background: url("../../../assets/icon/serviceList/dropdown.svg") no-repeat;
-  width: 23px;
-  height: 23px;
+  width: 20px;
+  height: 20px;
   display: inline-block;
   background-size: contain;
-  margin-top: 4px;
 }
 
 .dropdownBlue {
   background: url("../../../assets/icon/serviceList/dropdown_blue.svg") no-repeat !important;
-  width: 23px;
-  height: 23px;
+  width: 20px;
+  height: 20px;
   display: inline-block;
   background-size: contain !important;
-  margin-top: 4px;
 }
 
 .filter {
   background: url("../../../assets/icon/serviceList/search_filter.svg") no-repeat;
-  width: 23px;
-  height: 23px;
+  width: 20px;
+  height: 20px;
   display: inline-block;
   background-size: contain;
-  margin-top: 4px;
 }
 .filterBlue {
   background: url("../../../assets/icon/serviceList/search_filter_blue.svg") no-repeat !important;
-  width: 23px;
-  height: 23px;
+  width: 20px;
+  height: 20px;
   display: inline-block;
   background-size: contain !important;
-  margin-top: 4px;
 }
 
 .selectFilter {
@@ -80,7 +63,6 @@
 }
 
 .imageType {
-  width: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,8 +74,8 @@
 
 .defaultView {
   background: url("../../../assets/icon/serviceList/view_type_1.svg") no-repeat;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   display: inline-block;
   background-size: contain;
   cursor: pointer;
@@ -102,200 +84,27 @@
 
 .flexView {
   background: url("../../../assets/icon/serviceList/view_type_2.svg") no-repeat;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   display: inline-block;
   background-size: contain;
   cursor: pointer;
   opacity: 0.6;
 }
 
-@media (max-width: 1920px) {
-  .box p {
-    font-size: 17px;
-  }
-  .box p:first-child {
-    width: 7vw;
-    height: 2.09vw;
-    min-width: 135px;
-    min-height: 38px;
+@media (max-width: 900px) {
+  .wrap {
+    display: flex;
+    padding: 15.8px 0px;
   }
 
-  .box p:last-child {
-    width: 6.3vw;
-    height: 2.09vw;
-    min-width: 113.67px;
-    min-height: 38px;
-  }
-
-  .dropdown,
-  .filter {
-    width: 18.69px;
-    height: 18.69px;
-  }
-
-  .defaultView {
-    width: 35px;
-    height: 35px;
-  }
-
-  .flexView {
-    width: 35px;
-    height: 35px;
-  }
-}
-@media (max-width: 1680px) {
   .box p {
     font-size: 16px;
+    padding: 8px 14px;
   }
-  .box p:first-child {
-    width: 8.05vw;
-    height: 2.27vw;
-    min-width: 127.75px;
-    min-height: 35px;
-  }
-
-  .box p:last-child {
-    width: 6.73vw;
-    height: 2.27vw;
-    min-width: 106.6px;
-    min-height: 35px;
-  }
-
-  .dropdown,
-  .filter {
-    width: 18.69px;
-    height: 18.69px;
-  }
-
-  .defaultView {
-    width: 35px;
-    height: 35px;
-  }
-  .flexView {
-    width: 35px;
-    height: 35px;
-  }
-}
-@media (max-width: 1440px) {
-  .box p {
-    font-size: 15px;
-  }
-  .box p:first-child {
-    width: 8.05vw;
-    height: 2.27vw;
-    min-width: 127.75px;
-    min-height: 35px;
-  }
-
-  .box p:last-child {
-    width: 7.22vw;
-    height: 2.27vw;
-    min-width: 106.6px;
-    min-height: 35px;
-  }
-
-  .dropdown,
-  .filter {
-    width: 17.52px;
-    height: 17.52px;
-  }
-
-  .defaultView {
-    width: 32px;
-    height: 32px;
-  }
-  .flexView {
-    width: 32px;
-    height: 32px;
-  }
-}
-@media (max-width: 1300px) {
-  .box p {
-    font-size: 16.58px;
-  }
-  .box p:first-child {
-    width: 10.8vw;
-    min-width: 124px;
-    height: 3vw;
-    min-height: 35px;
-  }
-  .box p:last-child {
-    width: 9.01vw;
-    min-width: 104px;
-    height: 3vw;
-    min-height: 35px;
-  }
-  .dropdown,
-  .filter {
-    width: 19.27px;
-    height: 19.27px;
-  }
-  .defaultView {
-    width: 35px;
-    height: 35px;
-  }
-  .flexView {
-    width: 35px;
-    height: 35px;
-  }
-}
-@media (max-width: 960px) {
-  .box p {
-    font-size: 15.75px;
-  }
-  .box p:first-child {
-    width: 14.4vw;
-    min-width: 112px;
-    height: 3.96vw;
-    min-height: 31px;
-  }
-  .box p:last-child {
-    width: 12.5vw;
-    min-width: 96px;
-    height: 3.96vw;
-    min-height: 31px;
-  }
-
-  .dropdown,
-  .filter {
-    width: 20px;
-    height: 20px;
-  }
-
-  .defaultView {
-    width: 30px;
-    height: 30px;
-  }
+  .defaultView,
   .flexView {
     width: 30px;
     height: 30px;
-  }
-}
-@media (max-width: 750px) {
-  .box p {
-    font-size: 13px;
-  }
-
-  .dropdown,
-  .filter {
-    width: 16px;
-    height: 16px;
-  }
-
-  .box {
-    width: 93%;
-  }
-  .imageType {
-    width: 7%;
-  }
-
-  .defaultView {
-    width: 24px;
-    height: 24px;
-  }
-  .flexView {
-    width: 24px;
-    height: 24px;
   }
 }

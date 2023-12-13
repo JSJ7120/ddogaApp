@@ -1,11 +1,11 @@
 /* defaultView */
 .name {
-  font-size: 25.5px;
+  font-size: 23px;
   font-weight: 700;
 }
 .address,
 .counselCount {
-  font-size: 19.15px;
+  font-size: 18px;
 }
 
 .address {
@@ -24,87 +24,22 @@
 
 .box .name {
   line-height: 1.25;
-  font-size: 28px;
+  font-size: 25px;
 }
 
 /* 반응형 */
-@media (max-width: 1920px) {
-  .name {
-    font-size: 22px;
-  }
-
-  .box .name {
-    font-size: 24px;
-  }
-
-  .address,
-  .counselCount {
-    font-size: 16.55px;
-  }
-}
-@media (max-width: 1680px) {
-  .name {
-    font-size: 20px;
-  }
-  .box .name {
-    font-size: 22.8px;
-  }
-
-  .address,
-  .counselCount {
-    font-size: 15.55px;
-  }
-}
-@media (max-width: 1440px) {
-  .name {
-    font-size: 19.4px;
-  }
-
-  .box .name {
-    font-size: 21px;
-  }
-
-  .address,
-  .counselCount {
-    font-size: 14.6px;
-  }
-}
-@media (max-width: 1300px) {
+@media (max-width: 900px) {
   .name {
     font-size: 21px;
+    line-height: 1.4;
   }
-  .box .name {
-    font-size: 23.5px;
-  }
-
   .address,
   .counselCount {
-    font-size: 16px;
-  }
-}
-@media (max-width: 960px) {
-  .name {
-    font-size: 21px;
-  }
-  .box .name {
-    font-size: 29px;
+    font-size: 17px;
+    line-height: 1.4;
   }
 
-  .address,
-  .counselCount {
-    font-size: 16px;
-  }
-}
-@media (max-width: 750px) {
-  .name {
-    font-size: 19px;
-  }
   .box .name {
-    font-size: 24.5px;
-  }
-
-  .address,
-  .counselCount {
-    font-size: 14px;
+    font-size: 23px;
   }
 }

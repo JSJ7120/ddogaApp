@@ -9,15 +9,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 23px;
   width: 50%;
-  height: 2.23vw;
-  min-height: 49.64px;
+  padding: 10px;
   border: 1px solid #c1c1c9;
   text-align: center;
   cursor: pointer;
   border-radius: 10px;
   color: #4a74fc;
-  font-size: 25.5px;
 }
 
 .choice p:hover {
@@ -25,48 +24,8 @@
 }
 
 /* 반응형 */
-@media (max-width: 1920px) {
+@media (max-width: 900px) {
   .choice p {
-    height: 2.505vw;
-    min-height: 46.72px;
-    font-size: 22px;
-  }
-}
-@media (max-width: 1680px) {
-  .choice p {
-    height: 2.78vw;
-    min-height: 43.8px;
-    font-size: 20.7px;
-  }
-}
-@media (max-width: 1440px) {
-  .choice p {
-    height: 3.04vw;
-    min-height: 42.09px;
-    font-size: 19.4px;
-  }
-}
-@media (max-width: 1300px) {
-  .choice p {
-    height: 3.71vw;
-    min-height: 42.97px;
-    font-size: 21.4px;
-  }
-}
-@media (max-width: 960px) {
-  .choice p {
-    height: 3.71vw;
-    min-height: 46px;
-    font-size: 16.89px;
-    width: 45.65vw;
-  }
-}
-
-@media (max-width: 750px) {
-  .choice p {
-    height: 3.71vw;
-    font-size: 14.3px;
-    min-height: 42px;
-    width: 45.65vw;
+    font-size: 20.5px;
   }
 }

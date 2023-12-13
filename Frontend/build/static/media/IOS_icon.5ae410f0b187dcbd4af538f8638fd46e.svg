@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_1937" data-name="사각형 1937" width="17" height="20.899" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="IOS_icon" transform="translate(-404 -129)">
+    <rect id="사각형_1938" data-name="사각형 1938" width="24" height="24" transform="translate(404 129)" fill="none"/>
+    <g id="그룹_8188" data-name="그룹 8188" transform="translate(407.5 129.551)">
+      <g id="그룹_8187" data-name="그룹 8187" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <path id="패스_9335" data-name="패스 9335" d="M14.2,12.785A4.747,4.747,0,0,1,16.463,8.8a4.862,4.862,0,0,0-3.831-2.066c-1.611-.168-3.174.964-3.994.964s-2.1-.946-3.462-.918A5.094,5.094,0,0,0,.882,9.4C-.976,12.605.412,17.329,2.188,19.926c.888,1.273,1.928,2.694,3.29,2.643,1.332-.055,1.828-.85,3.436-.85s2.057.85,3.443.817c1.428-.022,2.329-1.278,3.187-2.562A10.454,10.454,0,0,0,17,17.006a4.589,4.589,0,0,1-2.8-4.222" transform="translate(0 -1.672)" fill="#202020"/>
+        <path id="패스_9336" data-name="패스 9336" d="M14.382,3.35A4.681,4.681,0,0,0,15.452,0a4.756,4.756,0,0,0-3.078,1.593,4.447,4.447,0,0,0-1.1,3.226,3.933,3.933,0,0,0,3.11-1.469" transform="translate(-2.802 0)" fill="#202020"/>
+      </g>
+    </g>
+  </g>
+</svg>

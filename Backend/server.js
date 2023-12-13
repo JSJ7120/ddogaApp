@@ -5,7 +5,6 @@ const path = require("path");
 const mongoose = require("mongoose");
 const listRouter = require("./api/listRouter");
 const bodyParser = require("body-parser");
-const { createProxyMiddleware } = require("http-proxy-middleware");
 
 require("dotenv").config();
 
@@ -27,14 +26,6 @@ mongoose
   });
 
 app.use("/service", listRouter);
-
-app.use(
-  "/api",
-  createProxyMiddleware({
-    target: "http://15.164.161.145:8000/",
-    changeOrigin: true,
-  })
-);
 
 app.listen(PORT, () => {
   console.log(`listening on ${PORT}`);

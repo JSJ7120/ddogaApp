@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <defs>
+        <clipPath id="4uknrep1la">
+            <path data-name="사각형 1962" style="fill:none" d="M0 0h64v64H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 8204" style="clip-path:url(#4uknrep1la)">
+        <path data-name="패스 9394" d="M31.949 57.3S13.072 44.9 13.072 26.983a18.877 18.877 0 0 1 37.754 0C50.826 44.9 31.949 57.3 31.949 57.3" style="fill:#4a74fc"/>
+        <path data-name="패스 9395" d="m32.548 20.749 7.54 4.54v12.374a1.032 1.032 0 0 1-1.031 1.031H24.843a1.031 1.031 0 0 1-1.03-1.031V25.289l7.538-4.54a1.159 1.159 0 0 1 1.2 0" style="fill:#fff"/>
+        <path data-name="패스 9396" d="m21.636 26.568 9.626-5.789a1.334 1.334 0 0 1 1.374 0l9.626 5.789" style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:.972px;fill:none"/>
+        <path data-name="패스 9397" d="M30.634 30.794h-.988a.6.6 0 0 1-.6-.6v-.988a.6.6 0 0 1 .6-.6h.988a.6.6 0 0 1 .6.6v.994a.6.6 0 0 1-.6.6" style="fill:#4a74fc"/>
+        <path data-name="패스 9398" d="M34.256 30.794h-.988a.6.6 0 0 1-.6-.6v-.988a.6.6 0 0 1 .6-.6h.988a.6.6 0 0 1 .6.6v.994a.6.6 0 0 1-.6.6" style="fill:#4a74fc"/>
+        <path data-name="패스 9399" d="M30.634 34.326h-.988a.6.6 0 0 1-.6-.6v-.989a.6.6 0 0 1 .6-.6h.988a.6.6 0 0 1 .6.6v.989a.6.6 0 0 1-.6.6" style="fill:#4a74fc"/>
+        <path data-name="패스 9400" d="M34.256 34.326h-.988a.6.6 0 0 1-.6-.6v-.989a.6.6 0 0 1 .6-.6h.988a.6.6 0 0 1 .6.6v.989a.6.6 0 0 1-.6.6" style="fill:#4a74fc"/>
+    </g>
+</svg>
