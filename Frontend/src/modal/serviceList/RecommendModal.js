@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import style from "./styles/RecommendModal.module.css";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import info from "../../assets/images/information.svg";
-import check from "../../assets/images/check.svg";
+import info from "../../assets/image/serviceList/information.svg";
+import check from "../../assets/image/serviceList/check.svg";
 import ServiceModalRoot from "./ServiceModalRoot";
 import useApplyTransition from "../../hooks/useApplyTransition";
 import ModalBackdrop from "../common/ModalBackdrop";

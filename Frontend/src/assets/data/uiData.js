@@ -1,5 +1,4 @@
 import { cates } from "./uiImg";
-import emptyImg from "../image/serviceList/listimage.jpeg";
 
 export const NurshingData = [
   {

@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./ExpectedCostModal.module.css";
-import self from "../../assets/images/self_pay_rate.webp";
+import self from "../../assets/image/expectedCost/self_pay_rate.webp";
 import DetailContentsWrap from "../serviceDetail/DetailContentsWrap";
 
 const ExpectedCostModal = ({ modal, setModal }) => {

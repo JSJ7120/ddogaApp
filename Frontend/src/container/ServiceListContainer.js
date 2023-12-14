@@ -119,7 +119,7 @@ const ServiceListContainer = () => {
   useEffect(() => {
     !getLocalStorage && setLocalStorage("view", "default");
 
-    if (getLocalStorage.includes("default")) {
+    if (getLocalStorage?.includes("default")) {
       setViewChange(true);
       setFlag(1);
     } else {

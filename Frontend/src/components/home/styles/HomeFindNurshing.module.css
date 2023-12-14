@@ -41,7 +41,7 @@
   cursor: pointer;
 }
 
-.List a {
+.listBox {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -60,7 +60,7 @@
   width: 65%;
 }
 
-.List a .new {
+.listBox .new {
   font-size: 18px;
   position: absolute;
   border: 1px solid #fff;
@@ -103,7 +103,7 @@
     height: 70px;
   }
 
-  .List a .new {
+  .listBox .new {
     font-size: 16.55px;
     padding: 4px 9px 6px 9px;
   }

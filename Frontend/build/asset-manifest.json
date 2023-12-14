@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.39fafbe0.css",
-    "main.js": "/static/js/main.7b22fecc.js",
+    "main.css": "/static/css/main.7e6bac90.css",
+    "main.js": "/static/js/main.82d37e3d.js",
     "static/media/youtube.png": "/static/media/youtube.874aeaf95f2a5d21daf9.png",
-    "static/media/listimage.jpeg": "/static/media/listimage.4cac4f3ec674d955e7bd.jpeg",
     "static/media/banner.png": "/static/media/banner.c99181b730bca67277c7.png",
     "static/media/self_pay_rate.webp": "/static/media/self_pay_rate.fa0b63d8c1c3aa2e83d0.webp",
     "static/media/gcwnn.png": "/static/media/gcwnn.e6dcc4018a1466edfcc6.png",
@@ -105,11 +104,11 @@
     "static/media/right_bk.svg": "/static/media/right_bk.7b8fdd7a6769710368e8e09ffe5cdd0c.svg",
     "static/media/counsel_effect_2.svg": "/static/media/counsel_effect_2.6345774ac8a71cff4733bd4401e48bc9.svg",
     "static/media/counsel_effect_1.svg": "/static/media/counsel_effect_1.0d5ec8a1e034477f54b0c5afcb714850.svg",
-    "main.39fafbe0.css.map": "/static/css/main.39fafbe0.css.map",
-    "main.7b22fecc.js.map": "/static/js/main.7b22fecc.js.map"
+    "main.7e6bac90.css.map": "/static/css/main.7e6bac90.css.map",
+    "main.82d37e3d.js.map": "/static/js/main.82d37e3d.js.map"
   },
   "entrypoints": [
-    "static/css/main.39fafbe0.css",
-    "static/js/main.7b22fecc.js"
+    "static/css/main.7e6bac90.css",
+    "static/js/main.82d37e3d.js"
   ]
 }
