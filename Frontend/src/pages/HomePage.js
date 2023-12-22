@@ -20,7 +20,6 @@ const HomePage = () => {
 
     homeSliderImg.push(copyFirstImg);
     homeSliderImg.unshift(copyLastImg);
-    console.log(homeSliderImg``);
 
     return (
       <div style={{ paddingTop: "80px" }}>
