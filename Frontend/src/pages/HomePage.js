@@ -15,6 +15,12 @@ const HomePage = () => {
   const layout = "home_layout";
 
   const HomdeSlider = () => {
+    const copyFirstImg = homeSliderImg[0];
+    const copyLastImg = homeSliderImg[homeSliderImg.length - 1];
+
+    homeSliderImg.push(copyFirstImg);
+    homeSliderImg.unshift(copyLastImg);
+
     return (
       <div style={{ paddingTop: "80px" }}>
         <Slider images={homeSliderImg} mainSlider={true} height={333} />

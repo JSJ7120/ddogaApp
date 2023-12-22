@@ -18,9 +18,9 @@ const Slider = ({ children, images, height, mainSlider }) => {
 
   const DragSet = (step, id, ms) => {
     setSwiper({ ...swiper, px: step, id });
+
     saveId.current = id;
     saveSwiper.current = step;
-
     speed.current = ms;
   };
 
@@ -90,6 +90,7 @@ const Slider = ({ children, images, height, mainSlider }) => {
     const prevID = currentID - 1;
 
     const currentImg = currentID * -divSize;
+
     const nextImg = nextID * -divSize;
 
     const step = swiper.px < currentImg;
@@ -100,14 +101,15 @@ const Slider = ({ children, images, height, mainSlider }) => {
       DragSet(currentImg + divSize, prevID, "0.5s");
     }
 
-    const lastImg = (length - 1) * -divSize;
+    const lastImg = (length - 2) * -divSize;
+
     const firstImg = 1 * -divSize;
 
     const firstImgChange = swiper.px <= lastImg;
     const lastImgChange = swiper.px >= firstImg;
 
     if (firstImgChange) DragSet(firstImg, 1, "0ms");
-    if (lastImgChange) DragSet(lastImg - firstImg, length - 2, "0ms");
+    if (lastImgChange) DragSet((length - 2) * -divSize, length - 2, "0ms");
   };
 
   return (

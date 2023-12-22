@@ -18,8 +18,7 @@ export const cates = {
 export const homeSliderImg = [
   require("../image/home/youtube.png"),
   require("../image/home/banner.png"),
-  require("../image/home/youtube.png"),
-  require("../image/home/banner.png"),
+  require("../image/home/evl.png"),
 ];
 
 export const hackton = {

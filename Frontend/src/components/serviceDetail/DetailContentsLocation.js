@@ -23,13 +23,16 @@ const DetailContentsLocation = ({ naverMap, address }) => {
 
   const copyClipBoard = async (e) => {
     const text = e.currentTarget.firstChild.textContent;
+    console.log(e);
+
     const message = "주소가 복사되었어요.";
 
     try {
       await navigator.clipboard.writeText(text);
       setCopy(true);
       setCopyAddress(message);
-    } catch (e) {
+    } catch (error) {
+      console.log(error);
       setCopy(false);
     }
     copyTimer();
@@ -40,7 +43,6 @@ const DetailContentsLocation = ({ naverMap, address }) => {
       setCopy(false);
       setCopyAddress("");
       setReverseTranstion("");
-
       clearInterval(interval);
     }, 3000);
   };

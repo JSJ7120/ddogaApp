@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState, startTransition } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchList } from "../store/ServiceListSlice";
@@ -18,10 +18,8 @@ const ServiceListContainer = () => {
   const navigate = useNavigate();
   const [viewChange, setViewChange] = useState(true);
   const [flag, setFlag] = useState(1);
-  const [scroll, setScroll] = useState(true);
+  const [scroll, setScroll] = useState(false);
   const [searchParams] = useSearchParams();
-
-  const [isLoading, setIsLoading] = useState();
 
   const cateId = searchParams.get("cateId");
   const sort = searchParams.get("sort");
@@ -54,7 +52,6 @@ const ServiceListContainer = () => {
   const loading = status === "loading";
 
   useEffect(() => {
-    setIsLoading(false);
     if (!cateId || !sort) {
       navigate("/");
     }
@@ -65,9 +62,7 @@ const ServiceListContainer = () => {
   }, [cateId, sort]);
 
   useEffect(() => {
-    startTransition(() => {
-      dispatch(fetchList({ area }));
-    });
+    dispatch(fetchList({ area }));
   }, [area]);
 
   useEffect(() => {
@@ -75,16 +70,12 @@ const ServiceListContainer = () => {
 
     const { scrollHeight, clientHeight } = document.documentElement;
 
-    const top = scrollHeight - clientHeight - 200;
+    const top = scrollHeight - clientHeight - 1000;
 
-    setTimeout(() => {
-      isLoading &&
-        window.scrollTo({
-          top: top,
-          left: 0,
-          behavior: "smooth",
-        });
-    }, 500);
+    window.scrollTo({
+      top,
+      left: 0,
+    });
   }, [Data]);
 
   useEffect(() => {
@@ -95,9 +86,8 @@ const ServiceListContainer = () => {
 
       if (scrollPosition >= scrollHeight) {
         setArea((prev) => ({ ...prev, page: (prev.page += 10) }));
-        setIsLoading(true);
       }
-    }, 300);
+    }, 500);
 
     if (!scroll) {
       window.addEventListener("scroll", handleScroll);
@@ -112,7 +102,6 @@ const ServiceListContainer = () => {
 
   const moveDetailPage = useCallback((id) => navigate(`detail/${id}?navId=1`), [navigate]);
 
-  //cardView Change
   const getLocalStorage = localStorage.getItem("view");
   const setLocalStorage = (name, value) => localStorage.setItem(name, value);
 

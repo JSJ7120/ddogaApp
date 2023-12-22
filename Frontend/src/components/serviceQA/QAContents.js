@@ -19,9 +19,7 @@ const QAContents = ({ complete, data }) => {
 
   const { publishedDate, view } = complete && arr && arr[0];
 
-  const newPublishedDate = 20 + `${publishedDate}`;
-
-  const date = format(newPublishedDate, "ko");
+  const date = format(publishedDate, "ko");
 
   return (
     <>
