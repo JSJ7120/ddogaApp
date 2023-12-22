@@ -2,7 +2,6 @@ import React, { useCallback, useEffect, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchList } from "../store/ServiceListSlice";
-
 import ServiceHeader from "../components/serviceList/ServiceHeader";
 import ServiceSearch from "../components/serviceList/ServiceSearch";
 import ServiceList from "../components/serviceList/ServiceList";
@@ -19,6 +18,7 @@ const ServiceListContainer = () => {
   const [viewChange, setViewChange] = useState(true);
   const [flag, setFlag] = useState(1);
   const [scroll, setScroll] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [searchParams] = useSearchParams();
 
   const cateId = searchParams.get("cateId");
@@ -68,14 +68,18 @@ const ServiceListContainer = () => {
   useEffect(() => {
     setScroll(Data.documentCount <= area.page);
 
-    const { scrollHeight, clientHeight } = document.documentElement;
+    const moveScroll = () => {
+      const { scrollHeight, clientHeight } = document.documentElement;
 
-    const top = scrollHeight - clientHeight - 1000;
+      const top = scrollHeight - clientHeight - 1000;
 
-    window.scrollTo({
-      top,
-      left: 0,
-    });
+      window.scrollTo({
+        top,
+        left: 0,
+      });
+    };
+
+    isLoading && moveScroll();
   }, [Data]);
 
   useEffect(() => {
@@ -85,9 +89,10 @@ const ServiceListContainer = () => {
       const scrollPosition = scrollTop + clientHeight;
 
       if (scrollPosition >= scrollHeight) {
-        setArea((prev) => ({ ...prev, page: (prev.page += 10) }));
+        setIsLoading(true);
+        setArea((prev) => ({ ...prev, page: (prev.page += 15) }));
       }
-    }, 500);
+    }, 700);
 
     if (!scroll) {
       window.addEventListener("scroll", handleScroll);

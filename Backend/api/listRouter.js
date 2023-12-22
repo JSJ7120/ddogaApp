@@ -48,7 +48,7 @@ listRouter.post("/", async (req, res) => {
 
     const documentCount = await Lists.find(arr).count();
 
-    const AllPages = documentCount - page <= 10 ? documentCount : page;
+    const AllPages = documentCount - page <= 20 ? documentCount : page;
 
     const result = await Lists.find(arr)
       .select("address area district title establish images rank onlineCounsel id thumbNail")
