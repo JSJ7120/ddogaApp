@@ -7,26 +7,11 @@ import HomeApp from "../components/home/HomeApp";
 import HomeCompanyInfo from "../components/home/HomeCompanyInfo";
 import HomeNavBar from "../components/home/HomeNavBar";
 import HomeFooter from "../components/home/HomeFooter";
-import Slider from "../components/common/Slider";
-import { homeSliderImg } from "../assets/data/uiImg";
+import HomeSlider from "../components/home/HomeSlider";
 import { Helmet } from "react-helmet";
 
 const HomePage = () => {
   const layout = "home_layout";
-
-  const HomdeSlider = () => {
-    const copyFirstImg = homeSliderImg[0];
-    const copyLastImg = homeSliderImg[homeSliderImg.length - 1];
-
-    homeSliderImg.push(copyFirstImg);
-    homeSliderImg.unshift(copyLastImg);
-
-    return (
-      <div style={{ paddingTop: "80px" }}>
-        <Slider images={homeSliderImg} mainSlider={true} height={333} />
-      </div>
-    );
-  };
 
   return (
     <>
@@ -35,7 +20,7 @@ const HomePage = () => {
       </Helmet>
 
       <HomeHeader />
-      <HomdeSlider />
+      <HomeSlider />
       <HomeLayout css={layout}>
         <HomeCounsel />
         <HomeFindNurshing />

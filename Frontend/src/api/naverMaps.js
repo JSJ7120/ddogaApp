@@ -1,4 +1,4 @@
-import maker from "../assets/icon/serviceDetail/maker.svg";
+import marker from "../assets/icon/serviceDetail/maker.svg";
 
 export const fetchMapsData = async (locations, naverMap) => {
   try {
@@ -29,7 +29,7 @@ export const fetchMapsData = async (locations, naverMap) => {
       position: location,
       map,
       icon: {
-        url: maker,
+        url: marker,
         size: new naver.maps.Size(64, 64),
         origin: new naver.maps.Point(0, 0),
         anchor: new naver.maps.Point(25, 26),

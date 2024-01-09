@@ -49,6 +49,8 @@ const DetailContentsTotalCounsel = ({
             const { title } = item["문의내용"];
             const { id } = item;
 
+            console.log(item.publishedDate);
+
             return (
               <div className={style.listBox} key={id} onClick={(e) => moveQA(e, id)}>
                 <h3>{title}</h3>

@@ -11,6 +11,8 @@ const AreaContent = ({ selectedArea, setArea, close }) => {
     district: selectedArea.district,
   });
 
+  console.log(selectedArea);
+
   const areaHandle = (e) => {
     const text = e.target.innerText;
 
@@ -24,7 +26,7 @@ const AreaContent = ({ selectedArea, setArea, close }) => {
   const sectionHandle = (e) => {
     const text = e.currentTarget.children[0].innerText;
 
-    setArea({ ...selectedArea, area: select.area, district: text });
+    setArea({ ...selectedArea, area: select.area, district: text, page: 10 });
 
     const area = {
       area: select.area,

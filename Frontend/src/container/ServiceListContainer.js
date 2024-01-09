@@ -66,7 +66,8 @@ const ServiceListContainer = () => {
   }, [area]);
 
   useEffect(() => {
-    setScroll(Data.documentCount <= area.page);
+    setScroll(Data.documentCount === Data?.result?.length);
+    if (!isLoading) return;
 
     const moveScroll = () => {
       const { scrollHeight, clientHeight } = document.documentElement;
@@ -79,7 +80,7 @@ const ServiceListContainer = () => {
       });
     };
 
-    isLoading && moveScroll();
+    moveScroll();
   }, [Data]);
 
   useEffect(() => {
@@ -89,8 +90,10 @@ const ServiceListContainer = () => {
       const scrollPosition = scrollTop + clientHeight;
 
       if (scrollPosition >= scrollHeight) {
-        setIsLoading(true);
-        setArea((prev) => ({ ...prev, page: (prev.page += 15) }));
+        setArea((prev) => ({ ...prev, page: prev.page + 10 }));
+        if (scrollHeight > 1000) {
+          setIsLoading(true);
+        }
       }
     }, 700);
 
@@ -101,7 +104,7 @@ const ServiceListContainer = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [scroll]);
+  }, []);
 
   const category = complete && NurshingData.filter((item) => item.cateId === Number(cateId));
 

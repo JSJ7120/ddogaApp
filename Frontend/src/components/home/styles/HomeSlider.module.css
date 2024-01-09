@@ -1,0 +1,9 @@
+.wrap {
+  padding-top: 80px;
+}
+
+@media (max-width: 900px) {
+  .wrap {
+    padding-top: 50px;
+  }
+}

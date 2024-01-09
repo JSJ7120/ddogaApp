@@ -22,7 +22,6 @@ const galleryListSlice = createSlice({
   name: "galleryListSlice",
   initialState: {
     data: [],
-    galleryData: [],
     status: "",
   },
   extraReducers: (bulider) => {

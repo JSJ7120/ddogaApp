@@ -32,6 +32,7 @@ const GalleryListContainer = () => {
 
       default:
         if (!complete) return <Loading loading={loading} />;
+
         return (
           <>
             <Helmet>

@@ -11,7 +11,6 @@ const serviceDetailSlice = createSlice({
   name: "serviceDetailSlice",
   initialState: {
     data: {},
-    notice: [],
     status: "",
   },
 
