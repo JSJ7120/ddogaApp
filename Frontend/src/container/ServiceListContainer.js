@@ -104,7 +104,7 @@ const ServiceListContainer = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [scroll]);
 
   const category = complete && NurshingData.filter((item) => item.cateId === Number(cateId));
 
