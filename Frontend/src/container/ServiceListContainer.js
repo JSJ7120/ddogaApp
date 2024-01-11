@@ -75,6 +75,9 @@ const ServiceListContainer = () => {
       const topInit = Data?.result?.length < 20;
       const topMove = scrollHeight - clientHeight - 1000;
 
+      if (topInit) {
+        setArea((prev) => ({ ...prev, page: 10 }));
+      }
       const top = topInit ? 0 : topMove;
 
       window.scrollTo({
@@ -107,8 +110,6 @@ const ServiceListContainer = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [scroll]);
-
-  useEffect(() => {}, [area.area]);
 
   const category = complete && NurshingData.filter((item) => item.cateId === Number(cateId));
 
