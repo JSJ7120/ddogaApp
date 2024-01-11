@@ -11,8 +11,6 @@ const AreaContent = ({ selectedArea, setArea, close }) => {
     district: selectedArea.district,
   });
 
-  console.log(selectedArea);
-
   const areaHandle = (e) => {
     const text = e.target.innerText;
 

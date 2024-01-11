@@ -67,12 +67,15 @@ const ServiceListContainer = () => {
 
   useEffect(() => {
     setScroll(Data.documentCount === Data?.result?.length);
+
     if (!isLoading) return;
 
     const moveScroll = () => {
       const { scrollHeight, clientHeight } = document.documentElement;
+      const topInit = Data?.result?.length < 20;
+      const topMove = scrollHeight - clientHeight - 1000;
 
-      const top = scrollHeight - clientHeight - 1000;
+      const top = topInit ? 0 : topMove;
 
       window.scrollTo({
         top,
@@ -81,6 +84,7 @@ const ServiceListContainer = () => {
     };
 
     moveScroll();
+    setIsLoading(false);
   }, [Data]);
 
   useEffect(() => {
@@ -91,9 +95,7 @@ const ServiceListContainer = () => {
 
       if (scrollPosition >= scrollHeight) {
         setArea((prev) => ({ ...prev, page: prev.page + 10 }));
-        if (scrollHeight > 1000) {
-          setIsLoading(true);
-        }
+        setIsLoading(true);
       }
     }, 700);
 
@@ -105,6 +107,8 @@ const ServiceListContainer = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [scroll]);
+
+  useEffect(() => {}, [area.area]);
 
   const category = complete && NurshingData.filter((item) => item.cateId === Number(cateId));
 
